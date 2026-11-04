@@ -1,0 +1,2117 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Esha Mohammad Mohaiminul Karim | Academic CV &amp; GIS Portfolio</title>
+  <meta name="description" content="Academic Curriculum Vitae and GIS Portfolio of Esha Mohammad Mohaiminul Karim — GIS Researcher, Spatial Data Analyst, and Geodatabase Developer in British Columbia, Canada." />
+  <meta name="author" content="Esha Mohammad Mohaiminul Karim" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Source Serif 4, Inter, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['"Source Serif 4"', 'Georgia', 'serif'],
+            mono: ['"JetBrains Mono"', 'monospace'],
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* ==========================================================================
+       CALM, ACADEMIC COLOUR SYSTEM (NEITHER FLASHY NOR GLOOMY)
+       Light Mode: Warm paper (#F8F9FA) with muted teal/navy (#0F766E / #1E3A8A)
+       Dark Mode: Soft slate-charcoal (#181C23) with soft sage-teal (#2DD4BF)
+       ========================================================================== */
+    :root {
+      --bg-page: #F8F9FA;
+      --bg-surface: #FFFFFF;
+      --bg-subtle: #F1F5F9;
+      --border-color: #E2E8F0;
+      --text-primary: #1E293B;
+      --text-secondary: #475569;
+      --text-muted: #64748B;
+      --accent: #0F766E;
+      --accent-navy: #1E3A8A;
+      --accent-hover: #115E59;
+      --accent-soft: #F0FDFA;
+      --accent-border: #CCFBF1;
+      --tag-bg: #F1F5F9;
+      --tag-text: #334155;
+    }
+
+    html.dark {
+      --bg-page: #181C23;
+      --bg-surface: #212630;
+      --bg-subtle: #282E3A;
+      --border-color: #2E3644;
+      --text-primary: #F1F5F9;
+      --text-secondary: #94A3B8;
+      --text-muted: #64748B;
+      --accent: #2DD4BF;
+      --accent-navy: #93C5FD;
+      --accent-hover: #5EEAD4;
+      --accent-soft: rgba(45, 212, 191, 0.10);
+      --accent-border: rgba(45, 212, 191, 0.28);
+      --tag-bg: #282E3A;
+      --tag-text: #CBD5E1;
+    }
+
+    body {
+      background-color: var(--bg-page);
+      color: var(--text-primary);
+      transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .surface-card {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+    }
+
+    .subtle-box {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-color);
+    }
+
+    .accent-box {
+      background-color: var(--accent-soft);
+      border: 1px solid var(--accent-border);
+    }
+
+    .text-accent {
+      color: var(--accent);
+    }
+
+    .skill-tag {
+      background-color: var(--tag-bg);
+      color: var(--tag-text);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-primary {
+      background-color: #0F766E;
+      color: #FFFFFF;
+      transition: background-color 0.15s ease;
+    }
+    html.dark .btn-primary {
+      background-color: #0D9488;
+      color: #F8FAFC;
+    }
+    .btn-primary:hover {
+      background-color: #115E59;
+    }
+    html.dark .btn-primary:hover {
+      background-color: #14B8A6;
+    }
+
+    .btn-outline {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-primary);
+      transition: border-color 0.15s ease, background-color 0.15s ease;
+    }
+    .btn-outline:hover {
+      border-color: var(--accent);
+      background-color: var(--bg-subtle);
+    }
+
+    /* Navigation Tabs */
+    .nav-link {
+      color: var(--text-secondary);
+      border-bottom: 2px solid transparent;
+      transition: color 0.15s ease, border-color 0.15s ease;
+    }
+    .nav-link:hover {
+      color: var(--text-primary);
+    }
+    .nav-link.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Filter Pills */
+    .filter-pill {
+      background-color: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      color: var(--text-secondary);
+      transition: all 0.15s ease;
+    }
+    .filter-pill.active {
+      background-color: var(--accent-soft);
+      border-color: var(--accent);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    /* Page View Transitions */
+    .page-section {
+      display: none;
+      animation: fadeIn 0.2s ease-out;
+    }
+    .page-section.active {
+      display: block;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Academic CV Citation & Hang Indent Styling */
+    .cv-citation {
+      padding-left: 1.5rem;
+      text-indent: -1.5rem;
+    }
+
+    /* Clean Print Layout — Prints the Formal Academic CV (#page-cv) Cleanly */
+    @media print {
+      @page {
+        margin: 14mm 16mm;
+      }
+      body {
+        background: #FFFFFF !important;
+        color: #0F172A !important;
+        font-size: 10pt;
+        line-height: 1.45;
+      }
+      .no-print {
+        display: none !important;
+      }
+      main {
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .page-section {
+        display: none !important;
+      }
+      #page-cv {
+        display: block !important;
+      }
+      .surface-card, .subtle-box, .accent-box {
+        background: #FFFFFF !important;
+        border-color: #CBD5E1 !important;
+        box-shadow: none !important;
+      }
+      .cv-print-block {
+        border: none !important;
+        padding: 0 !important;
+      }
+      a {
+        text-decoration: none !important;
+        color: #0F172A !important;
+      }
+      tr, li, .cv-item {
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+
+<body class="font-sans antialiased min-h-screen flex flex-col">
+
+  <!-- ==========================================================================
+       HEADER & MULTI-PAGE NAVIGATION BAR (MAX-WIDTH 940PX)
+       ========================================================================== -->
+  <header class="no-print sticky top-0 z-40 surface-card border-t-0 border-x-0">
+    <div class="max-w-[940px] mx-auto px-4 sm:px-6">
+      
+      <!-- Top Row: Identity & Theme Switcher -->
+      <div class="py-4 flex flex-wrap items-center justify-between gap-4 border-b" style="border-color: var(--border-color);">
+        <div>
+          <a href="#overview" onclick="navigateTo('overview')" class="font-serif text-xl sm:text-2xl font-bold tracking-tight hover:opacity-85 transition-opacity">
+            Esha Mohammad Mohaiminul Karim
+          </a>
+          <p class="text-xs sm:text-sm mt-0.5" style="color: var(--text-secondary);">
+            GIS Researcher &amp; Spatial Data Analyst <span class="mx-1.5 opacity-40">•</span> Maple Ridge, British Columbia, Canada
+          </p>
+        </div>
+
+        <!-- Theme Selector (Auto / Light / Dark) & Print Academic CV -->
+        <div class="flex items-center gap-2">
+          <div class="inline-flex items-center rounded-lg p-0.5 text-xs subtle-box" role="group" aria-label="Theme Mode">
+            <button id="theme-auto" onclick="setThemeMode('auto')" class="px-2.5 py-1 rounded-md font-medium transition-colors" title="Follow browser Light/Dark setting">
+              Auto
+            </button>
+            <button id="theme-light" onclick="setThemeMode('light')" class="px-2.5 py-1 rounded-md font-medium transition-colors" title="Warm Paper Light Mode">
+              <i class="fa-regular fa-sun mr-1"></i>Light
+            </button>
+            <button id="theme-dark" onclick="setThemeMode('dark')" class="px-2.5 py-1 rounded-md font-medium transition-colors" title="Soft Slate Dark Mode">
+              <i class="fa-solid fa-moon mr-1"></i>Dark
+            </button>
+          </div>
+
+          <button onclick="printAcademicCV()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium btn-outline" title="Print or Save Complete Academic CV as PDF">
+            <i class="fa-solid fa-print text-accent"></i>
+            <span>Print Academic CV</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Bottom Row: 5-Page Navigation Tabs -->
+      <nav class="flex items-center gap-1 sm:gap-5 overflow-x-auto text-sm -mb-px" aria-label="Main Navigation">
+        <a href="#overview" id="nav-overview" onclick="navigateTo('overview')" class="nav-link active py-3 px-2 whitespace-nowrap">
+          1. Overview
+        </a>
+        <a href="#cv" id="nav-cv" onclick="navigateTo('cv')" class="nav-link py-3 px-2 whitespace-nowrap flex items-center gap-1.5">
+          <i class="fa-solid fa-scroll text-xs text-accent"></i>
+          <span>2. Academic CV</span>
+        </a>
+        <a href="#research" id="nav-research" onclick="navigateTo('research')" class="nav-link py-3 px-2 whitespace-nowrap">
+          3. Theses &amp; Research
+        </a>
+        <a href="#toolbox" id="nav-toolbox" onclick="navigateTo('toolbox')" class="nav-link py-3 px-2 whitespace-nowrap flex items-center gap-1.5">
+          <i class="fa-solid fa-toolbox text-xs text-accent"></i>
+          <span>4. ArcGIS Toolbox</span>
+        </a>
+        <a href="#credentials" id="nav-credentials" onclick="navigateTo('credentials')" class="nav-link py-3 px-2 whitespace-nowrap">
+          5. Transcripts &amp; Credentials
+        </a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ==========================================================================
+       MAIN CONTENT CONTAINER (MAX-WIDTH 940PX, SPACIOUS & UNCLUTTERED)
+       ========================================================================== -->
+  <main class="flex-grow max-w-[940px] w-full mx-auto px-4 sm:px-6 py-8 sm:py-11">
+
+    <!-- ========================================================================
+         PAGE 1: OVERVIEW (#overview)
+         ======================================================================== -->
+    <section id="page-overview" class="page-section active space-y-9">
+      
+      <!-- Clean Academic Identity Card -->
+      <div class="surface-card rounded-xl p-6 sm:p-8 shadow-sm">
+        <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
+          <div class="space-y-3">
+            <p class="text-xs font-mono uppercase tracking-wider text-accent font-semibold">
+              Academic Curriculum Vitae &amp; Geospatial Portfolio
+            </p>
+            <h1 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">
+              Esha Mohammad Mohaiminul Karim
+            </h1>
+            <p class="text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary);">
+              GIS Specialist &amp; Spatial Researcher <span class="mx-1 opacity-50">|</span> BTech in GIS (BCIT) • MSc in Management (Stockholm) • MBA &amp; BBA in Finance (IBA, University of Dhaka)
+            </p>
+
+            <!-- Action Buttons -->
+            <div class="no-print pt-2 flex flex-wrap items-center gap-2.5">
+              <button onclick="navigateTo('cv')" class="btn-primary px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+                <i class="fa-solid fa-scroll"></i>
+                <span>View Full Academic CV</span>
+              </button>
+              <button onclick="printAcademicCV()" class="btn-outline px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+                <i class="fa-regular fa-file-pdf text-accent"></i>
+                <span>Print / Save Academic CV (PDF)</span>
+              </button>
+              <button onclick="navigateTo('toolbox')" class="btn-outline px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+                <i class="fa-solid fa-toolbox text-accent"></i>
+                <span>ArcGIS Pro Toolbox (5 Tools)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Location & Contact Block -->
+          <div class="subtle-box rounded-lg p-4 text-xs sm:text-sm space-y-2.5 shrink-0 md:min-w-[265px]">
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-location-dot w-4 text-center text-accent"></i>
+              <span>Maple Ridge, BC, Canada</span>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-solid fa-phone w-4 text-center text-accent"></i>
+              <a href="tel:+12369710731" class="hover:underline font-mono text-xs">(236) 971-0731</a>
+            </div>
+            <div class="flex items-center justify-between gap-2">
+              <div class="flex items-center gap-2.5">
+                <i class="fa-regular fa-envelope w-4 text-center text-accent"></i>
+                <a href="mailto:ekarim4@my.bcit.ca" class="hover:underline font-mono text-xs">ekarim4@my.bcit.ca</a>
+              </div>
+              <button onclick="copyToClipboard('ekarim4@my.bcit.ca', 'Email copied')" class="text-[11px] opacity-60 hover:opacity-100" title="Copy Email">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
+            <div class="flex items-center gap-2.5">
+              <i class="fa-brands fa-linkedin-in w-4 text-center text-accent"></i>
+              <a href="https://www.linkedin.com/in/eshakarim" target="_blank" rel="noopener noreferrer" class="hover:underline">linkedin.com/in/eshakarim</a>
+            </div>
+            <div class="flex items-center gap-2.5 pt-1.5 border-t" style="border-color: var(--border-color);">
+              <i class="fa-brands fa-github w-4 text-center text-accent"></i>
+              <a href="https://github.com/EshaKarim" target="_blank" rel="noopener noreferrer" class="hover:underline">EshaKarim.github.io</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Academic & Professional Summary -->
+        <div class="mt-6 pt-6 border-t space-y-3 text-sm sm:text-base leading-relaxed" style="border-color: var(--border-color); color: var(--text-secondary);">
+          <h2 class="font-mono text-xs uppercase tracking-wider text-accent font-semibold">Academic &amp; Research Profile</h2>
+          <p>
+            Spatial researcher and GIS practitioner combining technical training in <strong>Geographic Information Systems (BTech, BCIT)</strong> with graduate degrees in <strong>Operations Management and Control (MSc, Stockholm University)</strong> and <strong>Finance (MBA &amp; BBA, IBA, University of Dhaka)</strong>. Currently serving with the <strong>Department of National Defence (Environment Team, CFB Suffield Detachment BC)</strong> maintaining enterprise geodatabases, delineating Species at Risk (SAR) critical habitat via multi-criteria spatial analysis, and engineering automated Python pipelines (<strong>AddaxAI</strong>, <strong>Perch 2.0</strong>) for bioacoustic and ecological field surveys. Previously completed an industry research practicum with <strong>Renewal Development</strong> designing a centralised relational geodatabase and a spatial Multi-Criteria Decision Analysis (MCDA) model for land relocation, supported by over eight years of experience in business intelligence, econometric credit risk modelling, and data governance.
+          </p>
+        </div>
+      </div>
+
+      <!-- Research Interests & Academic Pillars (2x2 Grid) -->
+      <div class="space-y-4">
+        <h2 class="font-serif text-xl font-bold">Research Interests &amp; Methodological Focus</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <div class="surface-card rounded-xl p-5">
+            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
+              <i class="fa-solid fa-layer-group text-accent text-sm"></i>
+              <span>1. Spatial MCDA &amp; Habitat Suitability Modelling</span>
+            </h3>
+            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
+              Multi-Criteria Decision Analysis (MCDA), Species at Risk (SAR) critical habitat delineation, land relocation routing and hazard typification, terrain/slope raster modelling, and zoning constraint analysis.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-xl p-5">
+            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
+              <i class="fa-solid fa-wave-square text-accent text-sm"></i>
+              <span>2. Bioacoustic &amp; Ecological Data Automation</span>
+            </h3>
+            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
+              Automated Python ETL pipelines for Autonomous Recording Units (ARUs) and wildlife camera traps using <strong>Google Perch 2.0</strong>, <strong>AddaxAI</strong>, <strong>Chirpity</strong>, and R (<code>wildrtrax</code>) for enterprise geodatabase ingestion.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-xl p-5">
+            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
+              <i class="fa-solid fa-database text-accent text-sm"></i>
+              <span>3. Enterprise Geodatabases &amp; Geoprocessing</span>
+            </h3>
+            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
+              Relational database schema design (PostgreSQL/PostGIS, Enterprise GDB), custom ArcGIS Pro Python script tools (<code>.atbx</code> / <code>.pyt</code>), Safe Software FME workflows, and DataBC/GeoBC/CanVec harmonisation.
+            </p>
+          </div>
+
+          <div class="surface-card rounded-xl p-5">
+            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
+              <i class="fa-solid fa-scale-balanced text-accent text-sm"></i>
+              <span>4. Quantitative Risk &amp; Supply Chain Governance</span>
+            </h3>
+            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
+              Econometric credit risk prediction (OLS and binary logit regression), regulatory compliance governance, Corporate Social Responsibility (CSR) in global supply chains, and OCAP® Indigenous data sovereignty.
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Featured Theses & Research Snapshot -->
+      <div class="surface-card rounded-xl p-6 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h2 class="font-serif text-xl font-bold">Selected Theses &amp; Applied Research</h2>
+          <button onclick="navigateTo('research')" class="text-xs font-mono text-accent hover:underline">
+            Explore All Theses, Projects &amp; Talks →
+          </button>
+        </div>
+
+        <div class="divide-y text-xs sm:text-sm" style="border-color: var(--border-color);">
+          <div class="py-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">[DND Technical Research • 2026]</span>
+              <span class="font-semibold ml-1">Automated Bioacoustic &amp; Wildlife Data Pipelines for Autonomous Recording Units and SAR Habitat Modelling</span>
+              <span class="block mt-0.5 text-xs" style="color: var(--text-secondary);">Department of National Defence (CFB Suffield Detachment, Chilliwack, BC) • Supervisor: Angela Manweiler, MSc</span>
+            </div>
+            <span class="font-mono text-xs shrink-0" style="color: var(--text-muted);">Chilliwack, BC</span>
+          </div>
+
+          <div class="py-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">[BCIT Applied GIS Project • 2026]</span>
+              <span class="font-semibold ml-1">Relational Database Architecture and Multi-Criteria Spatial Decision Analysis for Land Relocation</span>
+              <span class="block mt-0.5 text-xs" style="color: var(--text-secondary);">BCIT (GIST 8125, 13.0 Credits) &amp; Renewal Development • Co-authors: L. Chigwada &amp; J. Lees • Supervisor: Josh MacDougall, MSc</span>
+            </div>
+            <span class="font-mono text-xs shrink-0" style="color: var(--text-muted);">Vancouver, BC</span>
+          </div>
+
+          <div class="py-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">[MBA Thesis • 2017]</span>
+              <span class="font-semibold ml-1">CRG (Credit Risk Grading) and Credit Risk Prediction: A Case Study of EBL's Corporate Customers</span>
+              <span class="block mt-0.5 text-xs" style="color: var(--text-secondary);">Institute of Business Administration (IBA), University of Dhaka • Supervisor: Associate Professor Mushtaque Ahmed</span>
+            </div>
+            <span class="font-mono text-xs shrink-0" style="color: var(--text-muted);">Dhaka, Bangladesh</span>
+          </div>
+
+          <div class="py-3 flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">[MSc Dissertation • 2016]</span>
+              <span class="font-semibold ml-1">A Study of the Effect of Regulatory Authorities on the Ready-Made Garments Sector in Bangladesh</span>
+              <span class="block mt-0.5 text-xs" style="color: var(--text-secondary);">Stockholm Business School, Stockholm University (FE5956, 30.0 hp) • Supervisor: Dr. Olov Isaksson • Co-researcher: Ruby Bengtsson</span>
+            </div>
+            <span class="font-mono text-xs shrink-0" style="color: var(--text-muted);">Stockholm, Sweden</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Callout Banner: ArcGIS_Script_Tools.atbx -->
+      <div class="accent-box rounded-xl p-6 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+        <div class="space-y-1.5">
+          <div class="font-mono text-xs uppercase tracking-wider text-accent font-semibold">
+            Open-Source Geoprocessing Suite (v2.4.0)
+          </div>
+          <h2 class="font-serif text-xl font-bold">
+            Custom ArcGIS Pro Toolbox (<code>ArcGIS_Script_Tools.atbx</code>)
+          </h2>
+          <p class="text-xs sm:text-sm leading-relaxed max-w-xl" style="color: var(--text-secondary);">
+            Download my 5-tool ArcGIS Pro geoprocessing suite packaging <strong>StringSearcher</strong>, <strong>SearchAndExtract</strong>, <strong>OSMDownloader</strong>, <strong>BasemapLoader</strong>, and <strong>BatchConvertPytToAtbx</strong>.
+          </p>
+        </div>
+        <div class="flex flex-wrap gap-2.5 shrink-0">
+          <a href="./ArcGIS_Script_Tools.atbx" download="ArcGIS_Script_Tools.atbx" onclick="notifyToolboxDownload()" class="btn-primary px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+            <i class="fa-solid fa-download"></i>
+            <span>Download .atbx</span>
+          </a>
+          <button onclick="navigateTo('toolbox')" class="btn-outline px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium">
+            Tool Documentation →
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================
+         PAGE 2: COMPLETE ACADEMIC CV (#cv)
+         ======================================================================== -->
+    <section id="page-cv" class="page-section space-y-8">
+      
+      <!-- Top Action Bar & Section Jump Pills (Hidden when printing) -->
+      <div class="no-print surface-card rounded-xl p-4 sm:p-5 space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-3">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-wider text-accent font-semibold">Curriculum Vitae</span>
+            <h2 class="font-serif text-lg sm:text-xl font-bold">Formal Academic Curriculum Vitae</h2>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="printAcademicCV()" class="btn-primary px-4 py-2 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+              <i class="fa-solid fa-print"></i>
+              <span>Print / Save Academic CV (PDF)</span>
+            </button>
+            <a href="./Esha_Karim_Resume.pdf" download="Esha_Karim_Resume.pdf" class="btn-outline px-3.5 py-2 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-1.5">
+              <i class="fa-regular fa-file-pdf text-accent"></i>
+              <span>Industry Resume (PDF)</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Quick Jump Pills -->
+        <div class="flex flex-wrap items-center gap-1.5 pt-2 border-t text-xs" style="border-color: var(--border-color);">
+          <span class="font-mono text-[11px] mr-1" style="color: var(--text-muted);">Jump to:</span>
+          <a href="#cv-education" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Education</a>
+          <a href="#cv-theses" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Theses</a>
+          <a href="#cv-wip" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Work in Progress</a>
+          <a href="#cv-talks" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Talks</a>
+          <a href="#cv-honours" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Honours &amp; Grants</a>
+          <a href="#cv-research" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Research Experience</a>
+          <a href="#cv-software" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Software (.atbx)</a>
+          <a href="#cv-industry" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Mentorship &amp; Industry</a>
+          <a href="#cv-skills" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">Technical Skills</a>
+          <a href="#cv-references" class="skill-tag px-2.5 py-1 rounded hover:opacity-80">References</a>
+        </div>
+      </div>
+
+      <!-- FORMAL ACADEMIC CV SHEET -->
+      <div class="surface-card cv-print-block rounded-xl p-6 sm:p-10 space-y-8 shadow-sm">
+
+        <!-- CV Document Header -->
+        <div class="border-b pb-6 text-center sm:text-left flex flex-col sm:flex-row sm:items-end justify-between gap-4" style="border-color: var(--border-color);">
+          <div>
+            <h1 class="font-serif text-2xl sm:text-3xl font-bold tracking-tight">
+              ESHA MOHAMMAD MOHAIMINUL KARIM
+            </h1>
+            <p class="text-xs sm:text-sm mt-1 font-medium" style="color: var(--text-secondary);">
+              Geographic Information Systems (GIS) Researcher • Spatial Data Scientist • Operations &amp; Financial Analyst
+            </p>
+          </div>
+          <div class="text-xs font-mono space-y-0.5 sm:text-right" style="color: var(--text-secondary);">
+            <div>Maple Ridge, British Columbia, Canada</div>
+            <div>Tel: (236) 971-0731 &nbsp;|&nbsp; ekarim4@my.bcit.ca</div>
+            <div>linkedin.com/in/eshakarim &nbsp;|&nbsp; EshaKarim.github.io</div>
+          </div>
+        </div>
+
+        <!-- 1. EDUCATION -->
+        <div id="cv-education" class="space-y-4">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            1. Education
+          </h2>
+
+          <div class="space-y-4 text-sm">
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Bachelor of Technology (BTech) in Geographic Information Systems (GIS)</span>
+                <span class="font-mono text-xs">09/2025 – Present (Expected 04/2027)</span>
+              </div>
+              <div class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
+                British Columbia Institute of Technology (BCIT), Burnaby, British Columbia, Canada
+              </div>
+              <ul class="mt-1.5 space-y-1 text-xs sm:text-sm list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Completed all technical coursework for the Advanced Diploma in GIS (<strong>Winter 2026 Term GPA: 80%</strong>; <strong>Cumulative GPA: 78%</strong> across 66.00 earned credits; 13.00 credits in liberal arts and management studies in progress Fall 2026).</li>
+                <li>Key Distinctions: Spatial Analysis (91%), Management Issues in GIS (89%), ArcGIS 1: Introduction (87%), ArcGIS 2: Data Management/Analysis (86%), GIS Digital Map/Cartography (84%), Applied GIS Project (82%, 13.0 Credits), GIS Comp &amp; Internet (82%), Geospatial Systems Management (81%), ArcGIS 3: Customization/Model (81%).</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Master of Business Administration (MBA), Concentration: Finance</span>
+                <span class="font-mono text-xs">02/2012 – 06/2017</span>
+              </div>
+              <div class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
+                Institute of Business Administration (IBA), University of Dhaka, Bangladesh
+              </div>
+              <ul class="mt-1.5 space-y-1 text-xs sm:text-sm list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>CGPA: 2.50 / 4.00 (Grade <strong>A / 4.00</strong> in <em>Financial Information Analysis</em>; Grade <strong>B+ / 3.50</strong> in <em>Managerial Communication</em>, <em>Buyer Behavior</em>, and <em>MBA Internship Program</em>). Evaluated as an equivalent Canadian Master's qualification by World Education Services (WES).</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Master of Science (MSc) in Management (Operations Management and Control)</span>
+                <span class="font-mono text-xs">09/2014 – 06/2016</span>
+              </div>
+              <div class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
+                Stockholm Business School, Stockholm University, Stockholm, Sweden (120 Higher Education Credits / hp)
+              </div>
+              <ul class="mt-1.5 space-y-1 text-xs sm:text-sm list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Awarded Grade <strong>A (Excellent)</strong> in <em>Qualitative Research (FE5824)</em> and Grade <strong>B (Very Good)</strong> in <em>Management Control and Financial Analysis (FE5429)</em>, <em>Purchasing and Distribution Logistics (FE5432)</em>, <em>Product and Service Design (FE5430)</em>, and <em>Project Leadership and Change Management (FE5434)</em>.</li>
+                <li><strong>International Exchange Semester (35.5 ECTS / hp):</strong> Warsaw School of Economics (SGH), Warsaw, Poland — completed graduate coursework in <em>Big Data</em>, <em>Financial Engineering</em>, <em>Corporate Financial Risk Management</em>, <em>Logistics Management</em>, <em>Management in a Logistic Company of the Future (CEMS)</em>, and <em>Fundamentals of Project Management</em>. WES Evaluated Canadian Equivalency.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Bachelor of Business Administration (BBA), Major: Finance (Concentration: Business Economics)</span>
+                <span class="font-mono text-xs">02/2007 – 06/2011</span>
+              </div>
+              <div class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
+                Institute of Business Administration (IBA), University of Dhaka, Bangladesh
+              </div>
+              <ul class="mt-1.5 space-y-1 text-xs sm:text-sm list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>CGPA: 3.09 / 4.00 (Earned Grade <strong>A / 4.00</strong> in <em>Introduction to Economic Geography</em>, <em>Quantitative Analysis</em>, <em>Mathematics for Decision Making</em>, <em>Operations Management</em>, <em>Computer Applications</em>, <em>Sociology</em>, <em>English Language</em>, and <em>International Finance</em>). WES Evaluated Canadian Equivalency.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2. THESES & DISSERTATIONS -->
+        <div id="cv-theses" class="space-y-3">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            2. Theses &amp; Dissertations
+          </h2>
+
+          <div class="space-y-3 text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (2017). <em>CRG (Credit Risk Grading) and Credit Risk Prediction: A Case Study of EBL's Corporate Customers</em>. Master of Business Administration Internship Thesis Report, Institute of Business Administration (IBA), University of Dhaka. Supervisor: Associate Professor Mushtaque Ahmed. [Econometric evaluation using Ordinary Least Squares (OLS) and binary logit regression of Bangladesh Bank's Credit Risk Grading (CRG) and Credit Risk Rating (CRR) frameworks across 35 corporate borrowers].
+            </p>
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (2016). <em>A Study of the Effect of Regulatory Authorities on the Ready-Made Garments Sector in Bangladesh</em>. Master of Science Dissertation in Management (Course Code FE5956, 30.0 HE Credits), Stockholm Business School, Stockholm University. Supervisor: Dr. Olov Isaksson. Co-researcher: Ruby Bengtsson. [Mixed-methods empirical investigation of post-Rana Plaza regulatory bodies (Accord and Alliance), supply chain collaboration, and Corporate Social Responsibility (CSR) across 2,200+ inspected garment factories].
+            </p>
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (2011). <em>Predicting Delinquency of EBL's Corporate Customers</em>. Bachelor of Business Administration Internship Report, Institute of Business Administration (IBA), University of Dhaka. Supervisor: Shama-e Zaheer.
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. WORK IN PROGRESS & APPLIED RESEARCH REPORTS -->
+        <div id="cv-wip" class="space-y-3">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            3. Work in Progress &amp; Applied Research Reports
+          </h2>
+
+          <div class="space-y-3 text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (2026). <em>Automated Bioacoustic and Wildlife Data Pipelines for Autonomous Recording Units and Species at Risk Habitat Modelling</em>. Environment Team Technical Project, Department of National Defence (DND), Government of Canada (CFB Suffield Detachment, Chilliwack, BC). Supervisor: Angela Manweiler, MSc.
+            </p>
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong>, Chigwada, L., &amp; Lees, J. (2026). <em>Relational Database Architecture and Multi-Criteria Spatial Decision Analysis for Land Relocation</em>. Applied GIS Project (GIST 8125, 13.0 Credits), British Columbia Institute of Technology &amp; Renewal Development, Vancouver, BC. Supervisor: Josh MacDougall, MSc.
+            </p>
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (2026). <em>VanVolt: Electric Vehicle Charging Infrastructure Locator and Policymaker Spatial Dashboard for the City of Vancouver</em>. Esri Canada App Challenge Technical Submission, British Columbia Institute of Technology, Burnaby, BC.
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. TALKS & PRESENTATIONS -->
+        <div id="cv-talks" class="space-y-3">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            4. Conference Talks &amp; Academic Presentations
+          </h2>
+
+          <div class="space-y-3 text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (Presenting Author). (May 2026). <em>Hazard Typification and Road Segment Classification for Spatial Relocation Modelling</em>. Oral presentation at the Vancouver GIS Users Group (VGIS) Meeting, Vancouver, BC, Canada.
+            </p>
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (Presenting Author). (April 2026). <em>VanVolt: Spatial Decision Support for Municipal EV Charging Deployment</em>. Esri App Challenge Presentation, British Columbia Institute of Technology, Burnaby, BC, Canada.
+            </p>
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (Presenting Author). (June 2017). <em>CRG (Credit Risk Grading) and Credit Risk Prediction: A Case Study of EBL's Corporate Customers</em>. Master of Business Administration Defence Presentation, Institute of Business Administration (IBA), University of Dhaka, Bangladesh.
+            </p>
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (Presenting Author). (May 2016). <em>A Study of the Effect of Regulatory Authorities on the Ready-Made Garments Sector in Bangladesh</em>. Master's Thesis Defence Seminar, Stockholm Business School, Stockholm University, Stockholm, Sweden.
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. HONOURS, SCHOLARSHIPS & AWARDS -->
+        <div id="cv-honours" class="space-y-3">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            5. Honours, Scholarships &amp; Grants
+          </h2>
+
+          <ul class="space-y-2 text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+            <li class="flex flex-wrap justify-between gap-2 cv-item">
+              <span><strong style="color: var(--text-primary);">Swedish Institute Study Scholarship (SISS)</strong> — Full Merit Fellowship for Master of Science Studies in Sweden, Swedish Institute, Government of Sweden</span>
+              <span class="font-mono text-xs shrink-0">2014 – 2016</span>
+            </li>
+            <li class="flex flex-wrap justify-between gap-2 cv-item">
+              <span><strong style="color: var(--text-primary);">International Student Exchange Mobility Grant / Erasmus Study Scholarship</strong> — Stockholm University &amp; Warsaw School of Economics (SGH), Poland</span>
+              <span class="font-mono text-xs shrink-0">2015 – 2016</span>
+            </li>
+            <li class="flex flex-wrap justify-between gap-2 cv-item">
+              <span><strong style="color: var(--text-primary);">Third Prize, National Round of HSBC–Prothom Alo Bhasa Protiyog</strong> — National Language &amp; Linguistics Olympiad</span>
+              <span class="font-mono text-xs shrink-0">2005</span>
+            </li>
+            <li class="flex flex-wrap justify-between gap-2 cv-item">
+              <span><strong style="color: var(--text-primary);">Secondary School Completion Scholarship (Talentpool)</strong> (2001) &amp; <strong style="color: var(--text-primary);">Primary School Completion Scholarship</strong> (1998)</span>
+              <span class="font-mono text-xs shrink-0">1998, 2001</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 6. RESEARCH EXPERIENCE -->
+        <div id="cv-research" class="space-y-4">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            6. Research Experience
+          </h2>
+
+          <div class="space-y-4 text-xs sm:text-sm">
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>GIS Specialist / Student Researcher, Environment Team</span>
+                <span class="font-mono text-xs">06/2026 – Present</span>
+              </div>
+              <div class="font-medium" style="color: var(--text-secondary);">
+                Department of National Defence (DND), Government of Canada (CFB Suffield Detachment, Chilliwack, BC) • Supervisor: Angela Manweiler, MSc
+              </div>
+              <ul class="mt-1.5 space-y-1 list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Maintain enterprise geodatabase layers covering environmental monitoring, restricted land use buffers, invasive flora transects, and federal regulatory reporting.</li>
+                <li>Execute multi-criteria spatial analysis to delineate <strong>Species at Risk (SAR) critical habitat</strong>; author formal geospatial reports supporting resource management and land access decisions.</li>
+                <li>Engineered automated Python pipelines (<strong>AddaxAI</strong>, <strong>Perch 2.0</strong>) that parse, clean, and standardise bioacoustic and ecological field survey data for enterprise geodatabase loading, eliminating manual entry errors and shortening review cycles.</li>
+                <li>Acquire, quality-control, reproject, and integrate provincial (<strong>DataBC, GeoBC</strong>) and federal (<strong>CanVec</strong>) spatial datasets to keep regional topographic and cadastral base layers current.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>GIS &amp; Spatial Planning Researcher (Industry Practicum)</span>
+                <span class="font-mono text-xs">01/2026 – 05/2026</span>
+              </div>
+              <div class="font-medium" style="color: var(--text-secondary);">
+                Renewal Development &amp; British Columbia Institute of Technology (BCIT), Vancouver, BC • Supervisor: Josh MacDougall, MSc
+              </div>
+              <ul class="mt-1.5 space-y-1 list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Designed a centralised relational geodatabase (PostgreSQL/PostGIS and File GDB) from scratch with standardised attribute schemas, entity relationships, and access controls for multi-property tracking.</li>
+                <li>Developed a spatial Multi-Criteria Decision Analysis (MCDA) model combining municipal zoning bylaws, slope rasters, utility/infrastructure corridors, and clearance buffers to rank parcel suitability and evaluate house relocation routing hazards.</li>
+                <li>Configured mobile field data collection in <strong>Esri Field Maps</strong> and authored Standard Operating Procedures (SOPs) for data capture, QA/QC, and field verification.</li>
+                <li>Wrote custom <strong>ArcPy</strong> scripts to split master maps into per-layer maps, resolve polygon overlaps by priority score, and harmonise string attributes on habitat layers.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Graduate Researcher, Credit Risk &amp; Corporate Finance</span>
+                <span class="font-mono text-xs">01/2017 – 06/2017</span>
+              </div>
+              <div class="font-medium" style="color: var(--text-secondary);">
+                Institute of Business Administration (IBA), University of Dhaka &amp; Eastern Bank Limited • Supervisor: Associate Professor Mushtaque Ahmed
+              </div>
+              <ul class="mt-1.5 space-y-1 list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Conducted an empirical econometric study comparing Bangladesh Bank's Credit Risk Grading (CRG) and Credit Risk Rating (CRR) models across 35 corporate borrowers using OLS and binary logit regression in Gretl and Excel.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Graduate Researcher, Operations Management &amp; Supply Chain Governance</span>
+                <span class="font-mono text-xs">01/2016 – 06/2016</span>
+              </div>
+              <div class="font-medium" style="color: var(--text-secondary);">
+                Stockholm Business School, Stockholm University, Sweden • Supervisor: Dr. Olov Isaksson
+              </div>
+              <ul class="mt-1.5 space-y-1 list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Investigated the operational and governance impact of transnational regulatory frameworks (Accord on Fire and Building Safety and Alliance for Bangladesh Worker Safety) across 2,200+ inspected garment manufacturing facilities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. OPEN-SOURCE GEOPROCESSING SOFTWARE -->
+        <div id="cv-software" class="space-y-3">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            7. Open-Source Geoprocessing Software &amp; Toolboxes
+          </h2>
+
+          <div class="text-xs sm:text-sm leading-relaxed space-y-2" style="color: var(--text-secondary);">
+            <p class="cv-citation cv-item">
+              <strong style="color: var(--text-primary);">Karim, E. M. M.</strong> (2026). <code>ArcGIS_Script_Tools.atbx</code>: <em>Custom ArcGIS Pro Geoprocessing Suite (v2.4.0)</em> [Software Toolbox]. Available at <code>EshaKarim.github.io</code>.
+            </p>
+            <ul class="list-disc list-outside ml-6 space-y-1">
+              <li><strong>StringSearcher</strong> (<code>StringSearcher.tool</code>): Multi-field regular expression and case-insensitive substring auditing tool using <code>arcpy.da.SearchCursor</code> for attribute QA/QC.</li>
+              <li><strong>SearchAndExtract</strong> (<code>SearchAndExtract.tool</code>): DBMS-agnostic SQL query constructor (<code>arcpy.AddFieldDelimiters</code>) and automated geodatabase feature extractor (<code>arcpy.conversion.ExportFeatures</code>).</li>
+              <li><strong>OSMDownloader</strong> (<code>OSMDOwnloader.tool</code>): Study-area OpenStreetMap vector ingestion and automated target CRS projection tool.</li>
+              <li><strong>BasemapLoader</strong> (<code>BasemapLoader.tool</code>): Automated cartographic project initialisation tool (<code>arcpy.mp.ArcGISProject</code>) for DataBC, GeoBC, and CanVec reference layers.</li>
+              <li><strong>BatchConvertPytToAtbx</strong> (<code>BatchConvertPytToAtbx.tool</code>): Workspace batch migration utility converting legacy Python toolboxes (<code>.pyt</code>) into native ArcGIS Pro (<code>.atbx</code>) packages.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- 8. MENTORSHIP, LEADERSHIP & PROFESSIONAL EXPERIENCE -->
+        <div id="cv-industry" class="space-y-4">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            8. Mentorship, Leadership &amp; Industry Experience
+          </h2>
+
+          <div class="space-y-4 text-xs sm:text-sm">
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Financial Services Representative</span>
+                <span class="font-mono text-xs">03/2022 – 07/2025</span>
+              </div>
+              <div class="font-medium" style="color: var(--text-secondary);">
+                TD Canada Trust, British Columbia, Canada
+              </div>
+              <ul class="mt-1 space-y-1 list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Conducted frontline credit risk assessments, financial portfolio reviews, documentation discrepancy resolution, and regulatory compliance verification within a strictly audited Canadian banking environment.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Team Lead, Business Intelligence &amp; Management Information Systems (MIS)</span>
+                <span class="font-mono text-xs">03/2017 – 01/2020</span>
+              </div>
+              <div class="font-medium" style="color: var(--text-secondary);">
+                Eastern Bank Limited, Dhaka, Bangladesh
+              </div>
+              <ul class="mt-1 space-y-1 list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Supervised, trained, and mentored a multidisciplinary team of 5+ data analysts and technical specialists; set project schedules, assigned analytical deliverables, and coordinated cross-departmental data engineering initiatives.</li>
+                <li>Formulated institutional data governance protocols, Standard Operating Procedures (SOPs), and audit quality-control standards; built executive decision-support dashboards and statistical briefing reports for senior leadership.</li>
+              </ul>
+            </div>
+
+            <div class="cv-item">
+              <div class="flex flex-wrap justify-between font-semibold">
+                <span>Associate Relationship Manager, Commercial Banking (01/2012 – 07/2014) &amp; Management Trainee Officer (01/2011 – 12/2011)</span>
+                <span class="font-mono text-xs">01/2011 – 07/2014</span>
+              </div>
+              <div class="font-medium" style="color: var(--text-secondary);">
+                Eastern Bank Limited, Dhaka, Bangladesh
+              </div>
+              <ul class="mt-1 space-y-1 list-disc list-outside ml-4" style="color: var(--text-secondary);">
+                <li>Performed quantitative financial statement analysis, Credit Risk Grading (CRG), discounted cash flow appraisals, on-site property and title boundary inspections, lease agreement reviews, and credit facility structuring for commercial clients.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. TECHNICAL SKILLS, LICENCES & GOVERNANCE -->
+        <div id="cv-skills" class="space-y-3">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            9. Technical Skills, Licences &amp; Governance
+          </h2>
+
+          <div class="space-y-2 text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+            <p class="cv-item">
+              <strong style="color: var(--text-primary);">Geospatial &amp; Analytical Software:</strong> Esri ArcGIS Pro, ArcGIS Enterprise, ArcGIS Online, Esri Field Maps, Survey123, Experience Builder, ModelBuilder, QGIS, Safe Software FME Workbench, Agisoft Metashape, AutoCAD Map 3D, Trimble TerraSync, PostgreSQL/PostGIS (pgAdmin, DBeaver, pgModeler), Microsoft SQL Server, Oracle SQL, LibreOffice Base, IBM SPSS, Gretl, Tableau, Microsoft Power BI, Google Perch 2.0, AddaxAI, Chirpity, Advanced Microsoft Excel.
+            </p>
+            <p class="cv-item">
+              <strong style="color: var(--text-primary);">Programming &amp; Scripting:</strong> Python (<code>arcpy</code>, Pandas, NumPy, SciPy, Tkinter, PyQt, Regular Expressions), R (<code>wildrtrax</code>), SQL, Esri Arcade, JavaScript, HTML/CSS.
+            </p>
+            <p class="cv-item">
+              <strong style="color: var(--text-primary);">Licences, Certifications &amp; Data Governance:</strong> Pilot Certificate – Small Remotely Piloted Aircraft (VLOS), Basic Operations (Transport Canada); Valid BC Class 5 Driver's Licence; Familiarity with OCAP® (Ownership, Control, Access, and Possession) principles and Indigenous data sovereignty in spatial data handling; Fluent in English and Bengali.
+            </p>
+          </div>
+        </div>
+
+        <!-- 10. ACADEMIC & PROFESSIONAL REFERENCES -->
+        <div id="cv-references" class="space-y-3">
+          <h2 class="font-serif text-lg font-bold uppercase tracking-wider border-b pb-1.5 text-accent" style="border-color: var(--border-color);">
+            10. Academic &amp; Professional References
+          </h2>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs sm:text-sm" style="color: var(--text-secondary);">
+            <div class="subtle-box rounded-lg p-3.5 cv-item">
+              <div class="font-semibold" style="color: var(--text-primary);">Mike Hill, BSc, MSc(GIS)</div>
+              <div>Program Head / Faculty, Geographic Information Systems</div>
+              <div>British Columbia Institute of Technology (BCIT), Burnaby, BC</div>
+              <div class="font-mono text-xs mt-1">Office: SW3-2090 • Tel: 604-432-8737 • mike_hill@bcit.ca</div>
+            </div>
+
+            <div class="subtle-box rounded-lg p-3.5 cv-item">
+              <div class="font-semibold" style="color: var(--text-primary);">Josh MacDougall, BSc, MSc</div>
+              <div>Faculty &amp; Applied GIS Project Supervisor, GIS Department</div>
+              <div>British Columbia Institute of Technology (BCIT), Burnaby, BC</div>
+              <div class="font-mono text-xs mt-1">Office: SW3-2079 • Tel: 604-412-7752 • jmacdougall15@bcit.ca</div>
+            </div>
+
+            <div class="subtle-box rounded-lg p-3.5 cv-item">
+              <div class="font-semibold" style="color: var(--text-primary);">Angela Manweiler, MSc</div>
+              <div>Environment Officer, CFB Suffield Detachment BC</div>
+              <div>Department of National Defence (DND), Government of Canada</div>
+              <div class="font-mono text-xs mt-1">Tel: 604-858-1011 ext. 1120 • Cell: 604-316-2940 • Angela.Manweiler@forces.gc.ca</div>
+            </div>
+
+            <div class="subtle-box rounded-lg p-3.5 cv-item">
+              <div class="font-semibold" style="color: var(--text-primary);">Dr. Olov Isaksson &amp; Assoc. Prof. Mushtaque Ahmed</div>
+              <div>• <strong>Dr. Olov Isaksson:</strong> Senior Lecturer (MSc Thesis Supervisor), Stockholm Business School, Stockholm University</div>
+              <div>• <strong>Assoc. Prof. Mushtaque Ahmed:</strong> MBA Thesis Supervisor, IBA, University of Dhaka</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Page Footer Navigation -->
+      <div class="no-print pt-4 flex items-center justify-between text-xs sm:text-sm">
+        <button onclick="navigateTo('overview')" class="btn-outline px-4 py-2 rounded-lg">
+          ← Back to Overview
+        </button>
+        <button onclick="navigateTo('research')" class="btn-primary px-4 py-2 rounded-lg">
+          Next: Theses &amp; Research →
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================
+         PAGE 3: THESES, APPLIED RESEARCH & TALKS (#research)
+         ======================================================================== -->
+    <section id="page-research" class="page-section space-y-8">
+      
+      <div class="border-b pb-4 flex flex-wrap items-end justify-between gap-4" style="border-color: var(--border-color);">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-wider text-accent">Scholarship &amp; Technical Investigations</p>
+          <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-1">Theses, Applied Research &amp; Presentations</h1>
+        </div>
+
+        <!-- Filter Pills -->
+        <div class="no-print flex flex-wrap items-center gap-1.5 text-xs">
+          <button onclick="filterResearch('all')" id="res-filter-all" class="filter-pill active px-3 py-1.5 rounded-lg">
+            All Work (7)
+          </button>
+          <button onclick="filterResearch('thesis')" id="res-filter-thesis" class="filter-pill px-3 py-1.5 rounded-lg">
+            Theses &amp; Dissertations (3)
+          </button>
+          <button onclick="filterResearch('spatial')" id="res-filter-spatial" class="filter-pill px-3 py-1.5 rounded-lg">
+            Spatial &amp; GeoAI Research (3)
+          </button>
+          <button onclick="filterResearch('talks')" id="res-filter-talks" class="filter-pill px-3 py-1.5 rounded-lg">
+            Talks &amp; Seminars (4)
+          </button>
+        </div>
+      </div>
+
+      <div class="space-y-5" id="research-list">
+
+        <!-- Spatial Research 1: DND Bioacoustic & SAR Habitat -->
+        <article data-res-category="spatial" class="res-card surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-mono text-xs px-2.5 py-0.5 rounded subtle-box text-accent font-semibold">Government of Canada / DND Technical Research • 2026</span>
+            <span class="font-mono text-xs" style="color: var(--text-muted);">Chilliwack / CFB Suffield Detachment, BC</span>
+          </div>
+          <h2 class="font-serif text-xl font-bold">
+            Automated Bioacoustic and Wildlife Data Pipelines for Autonomous Recording Units and Species at Risk Habitat Modelling
+          </h2>
+          <p class="text-xs font-mono" style="color: var(--text-secondary);">
+            Author: Esha Mohammad Mohaiminul Karim &nbsp;|&nbsp; Supervisor: Angela Manweiler, MSc (Department of National Defence)
+          </p>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Develops automated Python data ingestion and QA/QC pipelines integrating <strong>Google Perch 2.0</strong>, <strong>AddaxAI</strong>, and <strong>Chirpity</strong> to process acoustic detections from Autonomous Recording Units (ARUs) and wildlife camera trap imagery. Standardises ecological survey outputs into enterprise geodatabase schemas and pairs species observation records with multi-criteria habitat suitability models to delineate federal <strong>Species at Risk (SAR)</strong> critical habitat and restricted land-use buffers.
+          </p>
+          <div class="flex flex-wrap gap-1.5 text-xs pt-1">
+            <span class="skill-tag px-2.5 py-0.5 rounded">Species at Risk (SAR)</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Perch 2.0 &amp; AddaxAI</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Enterprise Geodatabase</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Python (ArcPy / Pandas)</span>
+          </div>
+        </article>
+
+        <!-- Spatial Research 2: BCIT & Renewal Development Practicum -->
+        <article data-res-category="spatial" class="res-card surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-mono text-xs px-2.5 py-0.5 rounded subtle-box text-accent font-semibold">BCIT Applied GIS Practicum (GIST 8125 • 13.0 Credits) • 2026</span>
+            <span class="font-mono text-xs" style="color: var(--text-muted);">Vancouver &amp; Burnaby, BC</span>
+          </div>
+          <h2 class="font-serif text-xl font-bold">
+            Relational Database Architecture and Multi-Criteria Spatial Decision Analysis for Land Relocation
+          </h2>
+          <p class="text-xs font-mono" style="color: var(--text-secondary);">
+            Authors: Esha Mohammad Mohaiminul Karim, L. Chigwada, &amp; J. Lees &nbsp;|&nbsp; Supervisor: Josh MacDougall, MSc (BCIT) &nbsp;|&nbsp; Sponsor: Renewal Development
+          </p>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Architected a centralised relational geodatabase from scratch with formal entity-relationship schemas and access controls to track candidate properties for sustainable house relocation. Engineered a spatial Multi-Criteria Decision Analysis (MCDA) workflow combining municipal zoning bylaws, terrain slope rasters, utility/infrastructure corridors, and overhead/horizontal clearance buffers to rank parcel suitability and classify road segment hazards. Authored custom ArcPy tools to split master maps into per-layer deliverables, resolve polygon overlaps by priority score, and harmonise habitat string attributes.
+          </p>
+          <div class="flex flex-wrap gap-1.5 text-xs pt-1">
+            <span class="skill-tag px-2.5 py-0.5 rounded">Spatial MCDA</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Relational Geodatabase Design</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Road Hazard Typification</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Esri Field Maps &amp; ArcPy</span>
+          </div>
+        </article>
+
+        <!-- Spatial Research 3: VanVolt Esri App Challenge -->
+        <article data-res-category="spatial" class="res-card surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-mono text-xs px-2.5 py-0.5 rounded subtle-box text-accent font-semibold">Esri Canada App Challenge Submission • 2026</span>
+            <span class="font-mono text-xs" style="color: var(--text-muted);">BCIT, Burnaby, BC</span>
+          </div>
+          <h2 class="font-serif text-xl font-bold">
+            VanVolt: Electric Vehicle Charging Infrastructure Locator and Policymaker Spatial Dashboard for the City of Vancouver
+          </h2>
+          <p class="text-xs font-mono" style="color: var(--text-secondary);">
+            Author: Esha Mohammad Mohaiminul Karim &nbsp;|&nbsp; Institution: British Columbia Institute of Technology (BCIT)
+          </p>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Designed an interactive Web GIS decision-support application and policymaker spatial dashboard evaluating electric vehicle (EV) charging station accessibility, service area coverage gaps, multi-unit residential demand density, and equitable infrastructure siting across the City of Vancouver.
+          </p>
+        </article>
+
+        <!-- Thesis 1: MBA Thesis (IBA, University of Dhaka, 2017) -->
+        <article data-res-category="thesis" class="res-card surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-mono text-xs px-2.5 py-0.5 rounded subtle-box text-accent font-semibold">Master of Business Administration (MBA) Thesis • June 2017</span>
+            <span class="font-mono text-xs" style="color: var(--text-muted);">IBA, University of Dhaka</span>
+          </div>
+          <h2 class="font-serif text-xl font-bold">
+            CRG (Credit Risk Grading) and Credit Risk Prediction: A Case Study of EBL's Corporate Customers
+          </h2>
+          <p class="text-xs font-mono" style="color: var(--text-secondary);">
+            Author: Esha Mohammad Mohaiminul Karim (Roll No. 02, Batch 47E) &nbsp;|&nbsp; Supervisor: Associate Professor Mushtaque Ahmed
+          </p>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Evaluated the predictive efficacy of Bangladesh Bank's regulatory Credit Risk Grading (CRG) and newly introduced Credit Risk Rating (CRR) frameworks using longitudinal financial statement and loan performance data from 35 corporate borrowers at Eastern Bank Limited (EBL). Specified Ordinary Least Squares (OLS) and binary logit regression models in Gretl to test how leverage, liquidity, profitability, coverage, and qualitative governance indicators predict subsequent corporate loan delinquency.
+          </p>
+          <div class="flex flex-wrap gap-1.5 text-xs pt-1">
+            <span class="skill-tag px-2.5 py-0.5 rounded">Econometric Modelling (OLS &amp; Logit)</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Credit Risk Grading (CRG / CRR)</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Corporate Finance</span>
+          </div>
+        </article>
+
+        <!-- Thesis 2: MSc Dissertation (Stockholm University, 2016) -->
+        <article data-res-category="thesis" class="res-card surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-mono text-xs px-2.5 py-0.5 rounded subtle-box text-accent font-semibold">Master of Science (MSc) Dissertation (FE5956 • 30.0 ECTS) • June 2016</span>
+            <span class="font-mono text-xs" style="color: var(--text-muted);">Stockholm University, Sweden</span>
+          </div>
+          <h2 class="font-serif text-xl font-bold">
+            A Study of the Effect of Regulatory Authorities on the Ready-Made Garments Sector in Bangladesh
+          </h2>
+          <p class="text-xs font-mono" style="color: var(--text-secondary);">
+            Authors: Esha Mohammad Mohaiminul Karim &amp; Ruby Bengtsson &nbsp;|&nbsp; Supervisor: Dr. Olov Isaksson (Stockholm Business School)
+          </p>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Conducted a mixed-methods empirical investigation into how transnational regulatory bodies established after the 2013 Rana Plaza tragedy—specifically the <em>Accord on Fire and Building Safety in Bangladesh</em> and the <em>Alliance for Bangladesh Worker Safety</em>—reshaped operational compliance, structural/fire/electrical remediation, buyer-supplier collaboration, and Corporate Social Responsibility (CSR) across more than 2,200 inspected ready-made garment (RMG) factories.
+          </p>
+          <div class="flex flex-wrap gap-1.5 text-xs pt-1">
+            <span class="skill-tag px-2.5 py-0.5 rounded">Operations Management &amp; Control</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Supply Chain Governance</span>
+            <span class="skill-tag px-2.5 py-0.5 rounded">Accord &amp; Alliance Remediation Data</span>
+          </div>
+        </article>
+
+        <!-- Thesis 3: BBA Internship Report (IBA, University of Dhaka, 2011) -->
+        <article data-res-category="thesis" class="res-card surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-mono text-xs px-2.5 py-0.5 rounded subtle-box text-accent font-semibold">Bachelor of Business Administration (BBA) Report • June 2011</span>
+            <span class="font-mono text-xs" style="color: var(--text-muted);">IBA, University of Dhaka</span>
+          </div>
+          <h2 class="font-serif text-xl font-bold">
+            Predicting Delinquency of EBL's Corporate Customers
+          </h2>
+          <p class="text-xs font-mono" style="color: var(--text-secondary);">
+            Author: Esha Mohammad Mohaiminul Karim (Roll No. 15, Batch 89) &nbsp;|&nbsp; Supervisor: Shama-e Zaheer
+          </p>
+          <p class="text-sm leading-relaxed" style="color: var(--text-secondary);">
+            Analysed commercial credit appraisal workflows, financial ratio thresholds, and early warning indicators of corporate loan default within Eastern Bank Limited's structured finance and corporate banking divisions.
+          </p>
+        </article>
+
+        <!-- Talks & Presentations Card -->
+        <article data-res-category="talks" class="res-card surface-card rounded-xl p-6 space-y-4">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <span class="font-mono text-xs px-2.5 py-0.5 rounded subtle-box text-accent font-semibold">Conference Talks &amp; Academic Seminars (2016 – 2026)</span>
+            <span class="font-mono text-xs" style="color: var(--text-muted);">Canada • Sweden • Bangladesh</span>
+          </div>
+          <h2 class="font-serif text-xl font-bold">Invited Talks, User Group Presentations &amp; Thesis Defences</h2>
+          <ul class="space-y-3 text-xs sm:text-sm leading-relaxed list-disc list-outside ml-4" style="color: var(--text-secondary);">
+            <li>
+              <strong>Vancouver GIS Users Group (VGIS) Meeting (May 2026, Vancouver, BC):</strong> <em>Hazard Typification and Road Segment Classification for Spatial Relocation Modelling</em> — Presented spatial network classification and overhead/horizontal clearance hazard modelling developed for house relocation routing.
+            </li>
+            <li>
+              <strong>Esri Canada App Challenge Presentation (April 2026, BCIT, Burnaby, BC):</strong> <em>VanVolt: Spatial Decision Support for Municipal EV Charging Deployment</em> — Demonstrated web GIS suitability criteria and policymaker dashboard architecture.
+            </li>
+            <li>
+              <strong>MBA Thesis Defence Presentation (June 2017, IBA, University of Dhaka):</strong> <em>CRG (Credit Risk Grading) and Credit Risk Prediction: A Case Study of EBL's Corporate Customers</em>.
+            </li>
+            <li>
+              <strong>MSc Dissertation Defence Seminar (May 2016, Stockholm Business School, Stockholm University):</strong> <em>A Study of the Effect of Regulatory Authorities on the Ready-Made Garments Sector in Bangladesh</em>.
+            </li>
+          </ul>
+        </article>
+
+      </div>
+
+      <!-- Page Footer Navigation -->
+      <div class="no-print pt-4 flex items-center justify-between text-xs sm:text-sm">
+        <button onclick="navigateTo('cv')" class="btn-outline px-4 py-2 rounded-lg">
+          ← Back to Academic CV
+        </button>
+        <button onclick="navigateTo('toolbox')" class="btn-primary px-4 py-2 rounded-lg">
+          Next: ArcGIS Pro Toolbox →
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================
+         PAGE 4: ARCGIS PRO TOOLBOX (#toolbox)
+         ======================================================================== -->
+    <section id="page-toolbox" class="page-section space-y-8">
+      
+      <!-- Header -->
+      <div class="border-b pb-4" style="border-color: var(--border-color);">
+        <p class="text-xs font-mono uppercase tracking-wider text-accent">ArcGIS Pro 3.x Geoprocessing Suite</p>
+        <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-1">
+          Custom ArcGIS Pro Toolbox (<code>ArcGIS_Script_Tools.atbx</code>)
+        </h1>
+        <p class="text-sm sm:text-base mt-2 leading-relaxed" style="color: var(--text-secondary);">
+          A native ArcGIS Pro toolbox packaging five custom Python (<code>arcpy</code>) script tools with integrated <code>ToolValidator</code> routines for multi-field string auditing, spatial feature extraction, OpenStreetMap ingestion, automated reference basemap loading, and batch <code>.pyt</code>-to-<code>.atbx</code> migration.
+        </p>
+      </div>
+
+      <!-- Dedicated Download Banner for ArcGIS_Script_Tools.atbx -->
+      <div class="accent-box rounded-xl p-6 space-y-4">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div class="space-y-1.5">
+            <div class="inline-flex items-center gap-2 font-mono text-xs text-accent font-semibold">
+              <i class="fa-solid fa-box-archive"></i>
+              <span>ArcGIS_Script_Tools.atbx (v2.4.0)</span>
+            </div>
+            <h2 class="font-serif text-xl font-bold">Download Complete 5-Tool Geoprocessing Toolbox</h2>
+            <p class="text-xs font-mono" style="color: var(--text-secondary);">
+              Format: ArcGIS Pro Toolbox (<code>.atbx</code>) &nbsp;|&nbsp; Compatibility: ArcGIS Pro 3.x / Python 3 (<code>arcpy</code>) &nbsp;|&nbsp; Contains: 5 Custom Geoprocessing Script Tools with <code>ToolValidator</code> classes
+            </p>
+          </div>
+
+          <div class="no-print flex flex-wrap sm:flex-nowrap gap-2.5 shrink-0">
+            <a href="./ArcGIS_Script_Tools.atbx" download="ArcGIS_Script_Tools.atbx" onclick="notifyToolboxDownload()" class="btn-primary px-5 py-3 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2 shadow-sm">
+              <i class="fa-solid fa-download"></i>
+              <span>Download .atbx Toolbox</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Concise 3-Step Installation Box -->
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-4 border-t text-xs" style="border-color: var(--accent-border);">
+          <div>
+            <span class="font-mono font-semibold text-accent">Step 1 — Download Archive:</span>
+            <span class="block mt-0.5" style="color: var(--text-secondary);">Save <code>ArcGIS_Script_Tools.atbx</code> into your ArcGIS Pro project directory.</span>
+          </div>
+          <div>
+            <span class="font-mono font-semibold text-accent">Step 2 — Add in Catalog Pane:</span>
+            <span class="block mt-0.5" style="color: var(--text-secondary);">In ArcGIS Pro, open the <strong>Catalog Pane</strong> → right-click <strong>Toolboxes</strong> → <strong>Add Toolbox</strong>.</span>
+          </div>
+          <div>
+            <span class="font-mono font-semibold text-accent">Step 3 — Run or Chain in Models:</span>
+            <span class="block mt-0.5" style="color: var(--text-secondary);">Open any of the 5 script tools in the Geoprocessing pane or drag them into ModelBuilder.</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Search / Filter Bar for the 5 Tools -->
+      <div class="no-print flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3">
+        <div class="relative flex-grow">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-xs" style="color: var(--text-muted);"></i>
+          <input
+            type="text"
+            id="tool-search-input"
+            oninput="filterTools()"
+            placeholder="Filter tools by name, keyword, or arcpy function (e.g., OSM, regex, basemap, .pyt)..."
+            class="w-full pl-9 pr-4 py-2 rounded-lg text-xs sm:text-sm surface-card focus:outline-none"
+          />
+        </div>
+        <button onclick="toggleAllTools()" id="toggle-all-tools-btn" class="btn-outline px-3.5 py-2 rounded-lg text-xs font-mono shrink-0">
+          Expand All Parameters
+        </button>
+      </div>
+
+      <!-- 5 Tool Specification Cards -->
+      <div class="space-y-4" id="toolbox-cards-container">
+
+        <!-- TOOL 1: StringSearcher -->
+        <div class="tool-card surface-card rounded-xl p-5 space-y-3" data-keywords="stringsearcher attribute string searcher regex regular expression cursor qaqc audit">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div class="space-y-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="font-mono text-xs px-2 py-0.5 rounded subtle-box text-accent font-semibold">Tool 01</span>
+                <h3 class="font-mono text-base font-bold">StringSearcher</h3>
+                <span class="text-xs" style="color: var(--text-muted);">— Attribute String Searcher</span>
+              </div>
+              <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+                Scans multiple text fields across a feature class or table using case-insensitive substring or regex matching (<code>re</code>, <code>arcpy.da.SearchCursor</code>), logging matched ObjectIDs, field names, and summary counts to the geoprocessing message pane.
+              </p>
+            </div>
+            <button onclick="copyToolSnippet('StringSearcher')" class="no-print btn-outline px-3 py-1.5 rounded-lg text-xs font-mono inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-regular fa-copy text-accent"></i>
+              <span>Copy Python Snippet</span>
+            </button>
+          </div>
+
+          <details class="tool-detail subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Parameters &amp; Validation Logic (StringSearcher.tool)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-3" style="border-color: var(--border-color);">
+              <div>
+                <div class="font-mono font-semibold mb-1">Tool Parameters</div>
+                <ul class="space-y-1 font-mono text-[11px]" style="color: var(--text-secondary);">
+                  <li>• in_dataset (Feature Layer / Table View)</li>
+                  <li>• search_fields (MultiValue String Field Filter)</li>
+                  <li>• search_pattern (Substring or Regex Expression)</li>
+                  <li>• use_regex &amp; case_sensitive (Boolean Flags)</li>
+                </ul>
+              </div>
+              <div>
+                <div class="font-mono font-semibold mb-1">ToolValidator &amp; Execution Logic</div>
+                <p class="leading-relaxed" style="color: var(--text-secondary);">
+                  <code>tool.script.validate.py</code> dynamically inspects the input table schema via <code>arcpy.Describe</code> to populate only <code>String</code>-type fields. <code>tool.script.execute.py</code> iterates rows via <code>arcpy.da.SearchCursor</code> and outputs a structured QA/QC report.
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- TOOL 2: SearchAndExtract -->
+        <div class="tool-card surface-card rounded-xl p-5 space-y-3" data-keywords="searchandextract attribute search spatial extractor exportfeatures gdb sql query">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div class="space-y-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="font-mono text-xs px-2 py-0.5 rounded subtle-box text-accent font-semibold">Tool 02</span>
+                <h3 class="font-mono text-base font-bold">SearchAndExtract</h3>
+                <span class="text-xs" style="color: var(--text-muted);">— Attribute Search &amp; Spatial Extractor</span>
+              </div>
+              <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+                Queries target text attributes across a feature layer, applies an attribute/spatial selection, and exports matching features to a new geodatabase feature class (<code>arcpy.conversion.ExportFeatures</code>) with an optional summary table and automatic active map layer insertion.
+              </p>
+            </div>
+            <button onclick="copyToolSnippet('SearchAndExtract')" class="no-print btn-outline px-3 py-1.5 rounded-lg text-xs font-mono inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-regular fa-copy text-accent"></i>
+              <span>Copy Python Snippet</span>
+            </button>
+          </div>
+
+          <details class="tool-detail subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Parameters &amp; Validation Logic (SearchAndExtract.tool)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-3" style="border-color: var(--border-color);">
+              <div>
+                <div class="font-mono font-semibold mb-1">Tool Parameters</div>
+                <ul class="space-y-1 font-mono text-[11px]" style="color: var(--text-secondary);">
+                  <li>• in_features (Input Feature Layer)</li>
+                  <li>• target_fields (Multi-Field Attribute Filter)</li>
+                  <li>• query_string (Target Search Keyword)</li>
+                  <li>• out_feature_class (Output Geodatabase Feature Class)</li>
+                </ul>
+              </div>
+              <div>
+                <div class="font-mono font-semibold mb-1">ToolValidator &amp; Execution Logic</div>
+                <p class="leading-relaxed" style="color: var(--text-secondary);">
+                  Constructs DBMS-agnostic SQL <code>WHERE</code> clauses using <code>arcpy.AddFieldDelimiters</code>, validates output table names in the target workspace, extracts matching geometries via <code>arcpy.conversion.ExportFeatures</code>, and adds the result to the active map.
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- TOOL 3: OSMDownloader -->
+        <div class="tool-card surface-card rounded-xl p-5 space-y-3" data-keywords="osmdownloader openstreetmap spatial downloader highways buildings waterways aoi">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div class="space-y-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="font-mono text-xs px-2 py-0.5 rounded subtle-box text-accent font-semibold">Tool 03</span>
+                <h3 class="font-mono text-base font-bold">OSMDownloader</h3>
+                <span class="text-xs" style="color: var(--text-muted);">— OpenStreetMap Spatial Downloader</span>
+              </div>
+              <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+                Extracts OpenStreetMap vector features (highways, buildings, landuse, waterways, amenities) within a user-defined study area extent or template layer, converting raw OSM geometries into clean, projected geodatabase feature classes with standardised attribute schemas.
+              </p>
+            </div>
+            <button onclick="copyToolSnippet('OSMDownloader')" class="no-print btn-outline px-3 py-1.5 rounded-lg text-xs font-mono inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-regular fa-copy text-accent"></i>
+              <span>Copy Python Snippet</span>
+            </button>
+          </div>
+
+          <details class="tool-detail subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Parameters &amp; Validation Logic (OSMDOwnloader.tool)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-3" style="border-color: var(--border-color);">
+              <div>
+                <div class="font-mono font-semibold mb-1">Tool Parameters</div>
+                <ul class="space-y-1 font-mono text-[11px]" style="color: var(--text-secondary);">
+                  <li>• aoi_extent_or_layer (Study Area Polygon / Extent)</li>
+                  <li>• osm_tags (Highways, Buildings, Landuse, Waterways, Amenities)</li>
+                  <li>• out_spatial_ref (Target Coordinate System, e.g., EPSG:3005)</li>
+                  <li>• out_gdb (Target File Geodatabase)</li>
+                </ul>
+              </div>
+              <div>
+                <div class="font-mono font-semibold mb-1">ToolValidator &amp; Execution Logic</div>
+                <p class="leading-relaxed" style="color: var(--text-secondary);">
+                  Transforms study area bounding coordinates to WGS84 for Overpass API querying, parses returned vector elements into point/line/polygon geometry objects, and reprojects output feature classes to the user's target CRS.
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- TOOL 4: BasemapLoader -->
+        <div class="tool-card surface-card rounded-xl p-5 space-y-3" data-keywords="basemaploader automated basemap reference layer loader databc geobc canvec arcpy.mp">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div class="space-y-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="font-mono text-xs px-2 py-0.5 rounded subtle-box text-accent font-semibold">Tool 04</span>
+                <h3 class="font-mono text-base font-bold">BasemapLoader</h3>
+                <span class="text-xs" style="color: var(--text-muted);">— Automated Basemap &amp; Reference Layer Loader</span>
+              </div>
+              <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+                Streamlines cartographic project setup in ArcGIS Pro (<code>arcpy.mp.ArcGISProject</code>) by batch-loading standard provincial/federal reference services (DataBC, GeoBC, CanVec) and basemap layers into active map frames and syncing spatial references.
+              </p>
+            </div>
+            <button onclick="copyToolSnippet('BasemapLoader')" class="no-print btn-outline px-3 py-1.5 rounded-lg text-xs font-mono inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-regular fa-copy text-accent"></i>
+              <span>Copy Python Snippet</span>
+            </button>
+          </div>
+
+          <details class="tool-detail subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Parameters &amp; Validation Logic (BasemapLoader.tool)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-3" style="border-color: var(--border-color);">
+              <div>
+                <div class="font-mono font-semibold mb-1">Tool Parameters</div>
+                <ul class="space-y-1 font-mono text-[11px]" style="color: var(--text-secondary);">
+                  <li>• target_map (Active Map or Map Frame Selection)</li>
+                  <li>• basemap_preset (Topographic, Imagery, Light Gray, OSM)</li>
+                  <li>• reference_layers (DataBC / GeoBC / CanVec Service URLs)</li>
+                  <li>• spatial_reference (Target CRS Synchronisation)</li>
+                </ul>
+              </div>
+              <div>
+                <div class="font-mono font-semibold mb-1">ToolValidator &amp; Execution Logic</div>
+                <p class="leading-relaxed" style="color: var(--text-secondary);">
+                  Enumerates map frames in <code>arcpy.mp.ArcGISProject("CURRENT")</code>, attaches the selected basemap and provincial/federal reference layers, and enforces consistent projection properties across map series layouts.
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- TOOL 5: BatchConvertPytToAtbx -->
+        <div class="tool-card surface-card rounded-xl p-5 space-y-3" data-keywords="batchconvertpyttoatbx batch pyt to atbx toolbox converter migration">
+          <div class="flex flex-wrap items-start justify-between gap-3">
+            <div class="space-y-1">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="font-mono text-xs px-2 py-0.5 rounded subtle-box text-accent font-semibold">Tool 05</span>
+                <h3 class="font-mono text-base font-bold">BatchConvertPytToAtbx</h3>
+                <span class="text-xs" style="color: var(--text-muted);">— Batch <code>.pyt</code> to <code>.atbx</code> Toolbox Converter</span>
+              </div>
+              <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+                Automates the migration of legacy Python Toolboxes (<code>.pyt</code>) across workspace directories into modern ArcGIS Pro <code>.atbx</code> toolboxes, preserving parameter definitions, <code>tool.script.execute.py</code> logic, <code>tool.script.validate.py</code> routines, and tool metadata.
+              </p>
+            </div>
+            <button onclick="copyToolSnippet('BatchConvertPytToAtbx')" class="no-print btn-outline px-3 py-1.5 rounded-lg text-xs font-mono inline-flex items-center gap-1.5 shrink-0">
+              <i class="fa-regular fa-copy text-accent"></i>
+              <span>Copy Python Snippet</span>
+            </button>
+          </div>
+
+          <details class="tool-detail subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Parameters &amp; Validation Logic (BatchConvertPytToAtbx.tool)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-3" style="border-color: var(--border-color);">
+              <div>
+                <div class="font-mono font-semibold mb-1">Tool Parameters</div>
+                <ul class="space-y-1 font-mono text-[11px]" style="color: var(--text-secondary);">
+                  <li>• in_workspace_or_pyts (Input Directory or MultiValue .pyt Files)</li>
+                  <li>• out_folder (Output Directory for Generated .atbx Toolboxes)</li>
+                  <li>• overwrite_existing (Boolean Flag)</li>
+                </ul>
+              </div>
+              <div>
+                <div class="font-mono font-semibold mb-1">ToolValidator &amp; Execution Logic</div>
+                <p class="leading-relaxed" style="color: var(--text-secondary);">
+                  Recursively discovers <code>.pyt</code> files in the selected workspace, validates write permissions on the output directory, and converts each Python toolbox into a self-contained ArcGIS Pro <code>.atbx</code> package.
+                </p>
+              </div>
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+      <!-- Page Footer Navigation -->
+      <div class="no-print pt-4 flex items-center justify-between text-xs sm:text-sm">
+        <button onclick="navigateTo('research')" class="btn-outline px-4 py-2 rounded-lg">
+          ← Back to Theses &amp; Research
+        </button>
+        <button onclick="navigateTo('credentials')" class="btn-primary px-4 py-2 rounded-lg">
+          Next: Transcripts &amp; Credentials →
+        </button>
+      </div>
+
+    </section>
+
+    <!-- ========================================================================
+         PAGE 5: OFFICIAL TRANSCRIPTS & VERIFIED CREDENTIALS (#credentials)
+         ======================================================================== -->
+    <section id="page-credentials" class="page-section space-y-9">
+      
+      <div class="border-b pb-4 flex flex-wrap items-end justify-between gap-4" style="border-color: var(--border-color);">
+        <div>
+          <p class="text-xs font-mono uppercase tracking-wider text-accent">Official Academic Records &amp; Continuing Education</p>
+          <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-1">University Transcripts &amp; Verified Certifications</h1>
+        </div>
+        <span class="font-mono text-xs px-3 py-1.5 rounded-lg subtle-box">
+          WES Evaluated Canadian Equivalency
+        </span>
+      </div>
+
+      <!-- PART A: 4-DEGREE TRANSCRIPT EXPLORER -->
+      <div class="space-y-4">
+        <h2 class="font-serif text-xl font-bold">1. Official University Transcripts (4 Degrees)</h2>
+
+        <!-- Degree 1: BCIT BTech in GIS -->
+        <div class="surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">British Columbia Institute of Technology (BCIT) • Student ID: A01312891</span>
+              <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Bachelor of Technology (BTech), Geographic Information Systems</h3>
+            </div>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">Fall 2025 – Apr 2027 • GPA: 78% (Winter 2026: 80%)</span>
+          </div>
+          <p class="text-xs sm:text-sm" style="color: var(--text-secondary);">
+            66.00 Earned Credits completed across Fall 2025 (30.00 Cr, 76% GPA) and Winter 2026 (36.00 Cr, 80% GPA), plus 13.00 Credits in progress (Fall 2026).
+          </p>
+
+          <details class="subtle-box rounded-lg p-3.5 text-xs" open>
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Complete BCIT Course-by-Course Grade Record (23 Courses)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8106:</strong> Spatial Analysis (3.00 Cr, Winter 2026)</span>
+                <span class="font-mono font-semibold text-accent">91%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8110:</strong> Management Issues in GIS (3.00 Cr, Winter 2026)</span>
+                <span class="font-mono font-semibold text-accent">89%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7128:</strong> ArcGIS 1: Introduction (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono font-semibold text-accent">87%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8128:</strong> ArcGIS 2: Data Mgmt/Analysis (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono font-semibold text-accent">86%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8107:</strong> GIS Digital Map/Cartography (3.00 Cr, Winter 2026)</span>
+                <span class="font-mono font-semibold">84%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8125:</strong> GIS Project (13.00 Cr, Winter 2026)</span>
+                <span class="font-mono font-semibold">82%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7130:</strong> GIS Comp and the Internet (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono font-semibold">82%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8109:</strong> Geospatial Systems Management (2.00 Cr, Winter 2026)</span>
+                <span class="font-mono font-semibold">81%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8138:</strong> ArcGIS 3: Customization/Model (3.00 Cr, Winter 2026)</span>
+                <span class="font-mono font-semibold">81%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7010:</strong> GIS Programming 1 (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono">78%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8100:</strong> 3D GIS (3.00 Cr, Winter 2026)</span>
+                <span class="font-mono">78%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7120:</strong> GIS Project/Practicum Planning (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono">76%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8118:</strong> GIS Remote Sensing (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono">74%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7111:</strong> CAD For GIS (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono">73%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7100:</strong> Fundamentals of GIS (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono">68%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7132:</strong> GIS Database Systems 1 (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono">67%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8010:</strong> GIS Programming 2 (3.00 Cr, Winter 2026)</span>
+                <span class="font-mono">67%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 7108:</strong> Fundamentals of Mapping (3.00 Cr, Fall 2025)</span>
+                <span class="font-mono">65%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>GIST 8132:</strong> GIS Database Systems 2 (3.00 Cr, Winter 2026)</span>
+                <span class="font-mono">65%</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Fall 2026 (In Progress, 13.00 Cr):</strong> BCST 1170, BUSA 7250, LIBS 7001, LIBS 7002, TMGT 7133</span>
+                <span class="font-mono text-accent">WIP</span>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Degree 2: Stockholm University MSc + Warsaw SGH Exchange -->
+        <div class="surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">Stockholm University, Sweden &amp; Warsaw School of Economics (SGH), Poland</span>
+              <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Master of Science (120 credits / 120 hp), Main Field: Management</h3>
+            </div>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">Completed 2016-06-02 • 120.0 hp</span>
+          </div>
+
+          <details class="subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Complete Stockholm University &amp; SGH Warsaw Coursework (19 Courses)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5824:</strong> Qualitative Research (7.5 hp, 2015-06-04)</span>
+                <span class="font-mono font-semibold text-accent">Grade A</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5429:</strong> Management Control &amp; Financial Analysis (7.5 hp)</span>
+                <span class="font-mono font-semibold">Grade B</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5432:</strong> Purchasing &amp; Distribution Logistics (7.5 hp)</span>
+                <span class="font-mono font-semibold">Grade B</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5430:</strong> Product and Service Design (7.5 hp)</span>
+                <span class="font-mono font-semibold">Grade B</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5434:</strong> Project Leadership &amp; Change Management (7.5 hp)</span>
+                <span class="font-mono font-semibold">Grade B</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE4422:</strong> Performance Management (7.5 hp)</span>
+                <span class="font-mono">Grade C</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5428:</strong> Production Management &amp; Services Delivery (7.5 hp)</span>
+                <span class="font-mono">Grade D</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5431:</strong> Society and Industry in Transformation (7.5 hp)</span>
+                <span class="font-mono">Grade D</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>FE5956:</strong> Master's Dissertation in Management (30.0 hp)</span>
+                <span class="font-mono">Grade D</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>SGH 223091-0421:</strong> Big Data (3.0 ECTS / 3.0 hp)</span>
+                <span class="font-mono text-accent">Credited</span>
+              </div>
+              <div class="flex justify-between py-1 border-b sm:col-span-2" style="border-color: var(--border-color);">
+                <span><strong>SGH Exchange (32.5 hp):</strong> Logistics Mgmt (3 ECTS), Financial Engineering (3 ECTS), Corporate Financial Risk Mgmt (3 ECTS), Fundamentals of Project Mgmt (3 ECTS), New Models of Urban Entrepreneurship (3 ECTS), Tools &amp; Techniques of Events Organization (6 ECTS), Brand Mgmt in Intl Market (4.5 ECTS), Social Media Marketing Strategies (3 ECTS), Mgmt in a Logistic Company of the Future CEMS (4 ECTS)</span>
+                <span class="font-mono text-accent shrink-0 ml-2">32.5 hp</span>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Degree 3: IBA University of Dhaka MBA -->
+        <div class="surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">Institute of Business Administration (IBA), University of Dhaka • Batch 47E, Roll 02</span>
+              <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Master of Business Administration (MBA), Concentration: Finance</h3>
+            </div>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">Feb 2012 – Jun 2017 • CGPA: 2.50</span>
+          </div>
+
+          <details class="subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Complete MBA Transcript Record (IBA, University of Dhaka)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>F 608:</strong> Financial Information Analysis</span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>C 501:</strong> Managerial Communication</span>
+                <span class="font-mono font-semibold">Grade B+ (3.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>M 603:</strong> Buyer Behavior</span>
+                <span class="font-mono font-semibold">Grade B+ (3.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Internship Program*</strong> (MBA Thesis Report)</span>
+                <span class="font-mono font-semibold">Grade B+ (3.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>M 609:</strong> Market Research</span>
+                <span class="font-mono">Grade B (3.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Comprehensive Exam*</strong></span>
+                <span class="font-mono">Grade B (3.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>W 501:</strong> Management of Organizations</span>
+                <span class="font-mono">Grade C+ (2.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>F 602:</strong> Financial Institutions &amp; Markets</span>
+                <span class="font-mono">Grade C+ (2.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>K 502:</strong> Statistics and Decision Analysis</span>
+                <span class="font-mono">Grade C (2.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>W 650:</strong> Business Strategy</span>
+                <span class="font-mono">Grade C (2.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>A 501, F 603, F 605:</strong> Financial Accounting, Intl Finance, Portfolio Mgmt</span>
+                <span class="font-mono">Grade D+ (1.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Exempted/Waived Foundation Courses (BBA):</strong> K 501, L 501, A 502, E 501, F 501, H 501, K 503, M 501, P 501</span>
+                <span class="font-mono">Waived (W)</span>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <!-- Degree 4: IBA University of Dhaka BBA -->
+        <div class="surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">Institute of Business Administration (IBA), University of Dhaka • Batch 89, Roll 15</span>
+              <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Bachelor of Business Administration (BBA), Major: Finance</h3>
+            </div>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">Feb 2007 – Jun 2011 • CGPA: 3.09 / 4.00</span>
+          </div>
+
+          <details class="subtle-box rounded-lg p-3.5 text-xs">
+            <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
+              <span>View Complete BBA Transcript Record (42 Courses, IBA University of Dhaka)</span>
+              <i class="fa-solid fa-chevron-down text-[10px]"></i>
+            </summary>
+            <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Introduction to Economic Geography</strong></span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Quantitative Analysis</strong></span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Mathematics for Decision Making</strong></span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Operations Management</strong></span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Computer Applications</strong></span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>International Finance</strong></span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Sociology &amp; English Language</strong></span>
+                <span class="font-mono font-semibold text-accent">Grade A (4.00)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Econometrics, Research Methods, Managerial Economics</strong></span>
+                <span class="font-mono font-semibold">Grade B+ (3.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Corporate Finance, Financial Mgmt II, Financial Info Analysis, Public Finance, Taxation</strong></span>
+                <span class="font-mono font-semibold">Grade B+ (3.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span><strong>Marketing Mgmt, Entrepreneurship, HRM, Psychology, Bangladesh Studies, Comprehensive Exam</strong></span>
+                <span class="font-mono font-semibold">Grade B+ (3.50)</span>
+              </div>
+              <div class="flex justify-between py-1 border-b sm:col-span-2" style="border-color: var(--border-color);">
+                <span><strong>Grade B (3.00):</strong> Financial Accounting II, Legal Environment of Business, Management Accounting, Financial Mgmt I, Business Ethics &amp; Leadership, Intl Business Environment, MIS, Business Strategy &amp; Policy, Internship Program</span>
+                <span class="font-mono shrink-0 ml-2">Grade B</span>
+              </div>
+            </div>
+          </details>
+        </div>
+
+      </div>
+
+      <!-- PART B: ESRI & COURSERA CERTIFICATIONS -->
+      <div class="space-y-4 pt-2">
+        <h2 class="font-serif text-xl font-bold">2. Esri Spatial Science MOOCs &amp; Verified Professional Certificates</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Oct 28, 2026</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">Make an Impact with Enterprise GIS</h3>
+              <p class="text-xs mt-1.5 leading-relaxed" style="color: var(--text-secondary);">
+                ArcGIS Enterprise portal administration, web GIS services, and distributed spatial workflows.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Official Learning Transcript
+            </div>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Oct 6, 2026</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">The ArcGIS Imagery MOOC: Foundations and Frontiers</h3>
+              <p class="text-xs mt-1.5 leading-relaxed" style="color: var(--text-secondary);">
+                Remote sensing, drone/RPAS ortho-mapping, multispectral imagery, and raster analytics.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Official Learning Transcript
+            </div>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Oct 25, 2025</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">Spatial Data Science: The New Frontier in Analytics</h3>
+              <p class="text-xs mt-1.5 leading-relaxed" style="color: var(--text-secondary);">
+                Spatial clustering, space-time cubes, predictive modelling, and Python notebooks in ArcGIS Pro.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Official Learning Transcript
+            </div>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Mar 7, 2025</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">Going Places with Spatial Analysis</h3>
+              <p class="text-xs mt-1.5 leading-relaxed" style="color: var(--text-secondary);">
+                Spatial overlay, proximity buffers, terrain analysis, and multi-criteria suitability modelling.
+              </p>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Official Learning Transcript
+            </div>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono" style="color: var(--text-muted);">Google • Aug 12, 2026 (7 Courses)</div>
+              <h3 class="font-serif font-bold text-base mt-1">Google Advanced Data Analytics Professional Certificate</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                Foundations of Data Science, Statistics, Regression Analysis &amp; Machine Learning.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/professional-cert/4GA65QVI137E" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Credential (4GA65QVI137E)</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono" style="color: var(--text-muted);">Google • Aug 11, 2026 (4 Courses)</div>
+              <h3 class="font-serif font-bold text-base mt-1">Google Business Intelligence Professional Certificate</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                BI Foundations, Data Models, ETL Pipelines &amp; Executive Dashboards.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/professional-cert/2ZDSWBAV2GTJ" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Credential (2ZDSWBAV2GTJ)</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono" style="color: var(--text-muted);">Google • Aug 10, 2026 (9 Courses)</div>
+              <h3 class="font-serif font-bold text-base mt-1">Google Data Analytics Professional Certificate</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                SQL, Python Data Analysis, Data Cleaning &amp; Tableau Visualisation.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/professional-cert/UVCBF8P9180H" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Credential (UVCBF8P9180H)</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono" style="color: var(--text-muted);">Macquarie University • Oct 15, 2023 (4 Courses)</div>
+              <h3 class="font-serif font-bold text-base mt-1">Excel Skills for Business Specialization</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                Essentials, Intermediate I &amp; II, and Advanced Spreadsheet Modelling.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/specialization/USUPSTSDEBNL" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Credential (USUPSTSDEBNL)</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between sm:col-span-2">
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div>
+                <div class="text-xs font-mono" style="color: var(--text-muted);">Google • Oct 17, 2024</div>
+                <h3 class="font-serif font-bold text-sm mt-0.5">Using Python to Interact with the OS</h3>
+                <a href="https://coursera.org/verify/XJ0Q6AK84738" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-accent hover:underline mt-1 inline-block">Verify (XJ0Q6AK84738) ↗</a>
+              </div>
+              <div>
+                <div class="text-xs font-mono" style="color: var(--text-muted);">Google • Apr 28, 2024</div>
+                <h3 class="font-serif font-bold text-sm mt-0.5">Crash Course on Python</h3>
+                <a href="https://coursera.org/verify/X8P97VKBCZNJ" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-accent hover:underline mt-1 inline-block">Verify (X8P97VKBCZNJ) ↗</a>
+              </div>
+              <div>
+                <div class="text-xs font-mono" style="color: var(--text-muted);">Google • Aug 8, 2023</div>
+                <h3 class="font-serif font-bold text-sm mt-0.5">Foundations of Project Management</h3>
+                <a href="https://coursera.org/verify/Q5PUSHCD5DUM" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-accent hover:underline mt-1 inline-block">Verify (Q5PUSHCD5DUM) ↗</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Page Footer Navigation -->
+      <div class="no-print pt-4 flex items-center justify-between text-xs sm:text-sm">
+        <button onclick="navigateTo('toolbox')" class="btn-outline px-4 py-2 rounded-lg">
+          ← Back to ArcGIS Toolbox
+        </button>
+        <button onclick="navigateTo('overview')" class="btn-outline px-4 py-2 rounded-lg">
+          Return to Overview ↑
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       CALM, MINIMAL ACADEMIC FOOTER
+       ========================================================================== -->
+  <footer class="no-print border-t py-6 text-xs" style="border-color: var(--border-color); color: var(--text-muted);">
+    <div class="max-w-[940px] mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <div>
+        © 2026 Esha Mohammad Mohaiminul Karim • Maple Ridge, British Columbia, Canada
+      </div>
+      <div class="flex flex-wrap items-center gap-4">
+        <a href="mailto:ekarim4@my.bcit.ca" class="hover:underline">ekarim4@my.bcit.ca</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/eshakarim" target="_blank" rel="noopener noreferrer" class="hover:underline">LinkedIn</a>
+        <span>•</span>
+        <a href="https://github.com/EshaKarim" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- SUBTLE NOTIFICATION TOAST -->
+  <div id="toast" class="no-print fixed bottom-5 right-5 z-50 hidden surface-card rounded-lg px-4 py-3 shadow-lg text-xs max-w-sm">
+    <div class="flex items-center gap-2.5">
+      <i class="fa-solid fa-circle-check text-accent"></i>
+      <span id="toast-text" class="font-medium"></span>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       SCRIPTS: MULTI-PAGE ROUTING, ADAPTIVE THEME, FILTERS & CV PRINT
+       ========================================================================== -->
+  <script>
+    // 1. Multi-Page Navigation Router
+    const validPages = ['overview', 'cv', 'research', 'toolbox', 'credentials'];
+
+    function navigateTo(pageId, updateHash = true) {
+      if (!validPages.includes(pageId)) pageId = 'overview';
+
+      document.querySelectorAll('.page-section').forEach(sec => {
+        sec.classList.remove('active');
+      });
+      const targetSection = document.getElementById('page-' + pageId);
+      if (targetSection) targetSection.classList.add('active');
+
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+      });
+      const activeNav = document.getElementById('nav-' + pageId);
+      if (activeNav) activeNav.classList.add('active');
+
+      if (updateHash) {
+        history.replaceState(null, null, '#' + pageId);
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Print / Save Academic CV cleanly as PDF
+    function printAcademicCV() {
+      navigateTo('cv', false);
+      setTimeout(() => {
+        window.print();
+      }, 120);
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const initialHash = window.location.hash.replace('#', '');
+      if (validPages.includes(initialHash)) {
+        navigateTo(initialHash, false);
+      }
+      initTheme();
+    });
+
+    window.addEventListener('hashchange', () => {
+      const hash = window.location.hash.replace('#', '');
+      if (validPages.includes(hash)) {
+        navigateTo(hash, false);
+      }
+    });
+
+    // 2. Adaptive Theme System (Auto / Light / Dark)
+    let currentThemeMode = localStorage.getItem('ek_theme_mode') || 'auto';
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+
+    function applyTheme(mode) {
+      const htmlEl = document.documentElement;
+      const isSystemDark = mediaQuery.matches;
+      const shouldBeDark = mode === 'dark' || (mode === 'auto' && isSystemDark);
+
+      if (shouldBeDark) {
+        htmlEl.classList.add('dark');
+      } else {
+        htmlEl.classList.remove('dark');
+      }
+
+      ['auto', 'light', 'dark'].forEach(m => {
+        const btn = document.getElementById('theme-' + m);
+        if (!btn) return;
+        if (m === mode) {
+          btn.style.backgroundColor = 'var(--bg-surface)';
+          btn.style.color = 'var(--accent)';
+          btn.style.boxShadow = '0 1px 2px rgba(0,0,0,0.06)';
+        } else {
+          btn.style.backgroundColor = 'transparent';
+          btn.style.color = 'var(--text-secondary)';
+          btn.style.boxShadow = 'none';
+        }
+      });
+    }
+
+    function setThemeMode(mode) {
+      currentThemeMode = mode;
+      localStorage.setItem('ek_theme_mode', mode);
+      applyTheme(mode);
+    }
+
+    function initTheme() {
+      applyTheme(currentThemeMode);
+      mediaQuery.addEventListener('change', () => {
+        if (currentThemeMode === 'auto') {
+          applyTheme('auto');
+        }
+      });
+    }
+
+    // 3. Theses & Research Filter (All | Theses | Spatial Research | Talks)
+    function filterResearch(category) {
+      ['all', 'thesis', 'spatial', 'talks'].forEach(cat => {
+        const btn = document.getElementById('res-filter-' + cat);
+        if (btn) {
+          btn.classList.toggle('active', cat === category);
+        }
+      });
+
+      document.querySelectorAll('.res-card').forEach(card => {
+        const cardCat = card.getAttribute('data-res-category');
+        if (category === 'all' || cardCat === category) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+
+    // 4. Toolbox Interactive Search & Expand/Collapse All
+    function filterTools() {
+      const query = (document.getElementById('tool-search-input').value || '').toLowerCase().trim();
+      document.querySelectorAll('.tool-card').forEach(card => {
+        const text = (card.textContent + ' ' + (card.getAttribute('data-keywords') || '')).toLowerCase();
+        card.style.display = text.includes(query) ? 'block' : 'none';
+      });
+    }
+
+    let allToolsExpanded = false;
+    function toggleAllTools() {
+      allToolsExpanded = !allToolsExpanded;
+      document.querySelectorAll('.tool-detail').forEach(detail => {
+        detail.open = allToolsExpanded;
+      });
+      const btn = document.getElementById('toggle-all-tools-btn');
+      if (btn) {
+        btn.textContent = allToolsExpanded ? 'Collapse All Parameters' : 'Expand All Parameters';
+      }
+    }
+
+    // 5. Copyable Python Snippets for Each of the 5 Tools
+    const toolSnippets = {
+      StringSearcher: `import arcpy, re
+# StringSearcher: Multi-field regex/substring QA/QC audit
+with arcpy.da.SearchCursor(in_dataset, ["OID@"] + search_fields) as cur:
+    for row in cur:
+        for idx, fld in enumerate(search_fields, 1):
+            if row[idx] and re.search(search_pattern, str(row[idx]), re.I):
+                arcpy.AddMessage(f"OID {row[0]} | {fld}: {row[idx]}")`,
+      SearchAndExtract: `import arcpy, os
+# SearchAndExtract: Multi-field SQL query & geodatabase feature export
+clauses = [f"UPPER({arcpy.AddFieldDelimiters(in_fc, f)}) LIKE '%{kw.upper()}%'" for f in fields]
+arcpy.conversion.ExportFeatures(in_fc, out_fc, where_clause=" OR ".join(clauses))`,
+      OSMDownloader: `import arcpy
+# OSMDownloader: Extract & project OpenStreetMap features within study AOI
+aoi_wgs84 = arcpy.Describe(aoi_layer).extent.projectAs(arcpy.SpatialReference(4326))
+arcpy.management.Project(raw_osm_fc, out_gdb_fc, arcpy.SpatialReference(3005))`,
+      BasemapLoader: `import arcpy
+# BasemapLoader: Standardise basemap & CRS in active ArcGIS Pro map frame
+aprx = arcpy.mp.ArcGISProject("CURRENT")
+m = aprx.activeMap
+m.addBasemap("Topographic")
+m.spatialReference = arcpy.SpatialReference(3005)`,
+      BatchConvertPytToAtbx: `import arcpy, os, glob
+# BatchConvertPytToAtbx: Migrate legacy .pyt toolboxes into .atbx format
+for pyt_path in glob.glob(os.path.join(in_workspace, "*.pyt")):
+    arcpy.AddMessage(f"Migrating {os.path.basename(pyt_path)} to .atbx...")`
+    };
+
+    function copyToolSnippet(toolName) {
+      const code = toolSnippets[toolName] || '';
+      copyToClipboard(code, `Copied ${toolName} Python snippet`);
+    }
+
+    function copyToClipboard(text, label) {
+      const el = document.createElement('textarea');
+      el.value = text;
+      el.style.position = 'fixed';
+      el.style.opacity = '0';
+      document.body.appendChild(el);
+      el.select();
+      try {
+        document.execCommand('copy');
+        showToast(label);
+      } catch (e) {
+        showToast(label);
+      }
+      document.body.removeChild(el);
+    }
+
+    function notifyToolboxDownload() {
+      showToast('Downloading ArcGIS_Script_Tools.atbx (Ensure ArcGIS_Script_Tools.atbx is uploaded to your GitHub repo root).');
+    }
+
+    let toastTimer;
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const text = document.getElementById('toast-text');
+      text.textContent = message;
+      toast.classList.remove('hidden');
+      clearTimeout(toastTimer);
+      toastTimer = setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 3800);
+    }
+  </script>
+</body>
+</html>
