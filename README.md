@@ -1,20 +1,26 @@
-# Esha Karim — GIS Portfolio & Resume
+# Esha Karim — GIS, Data Analytics & Business Intelligence Portfolio
 
-Welcome to the source repository for [**EshaKarim.github.io**](https://eshakarim.github.io) — the GIS portfolio, resume, and ArcGIS Pro script tool repository of **Esha Karim**.
+Welcome to the source repository for [**EshaKarim.github.io**](https://eshakarim.github.io) — the academic and professional portfolio, resume, and ArcGIS Pro script tool repository of **Esha Karim** (BTech GIS Candidate, MSc, MBA, BBA).
 
-## Profile
+## Unified Professional Profile
 
-GIS practitioner currently maintaining enterprise geodatabases, running spatial analysis and automating GIS workflows with FME, Python (ArcPy) and ModelBuilder. Completed a GIS practicum building a relational geodatabase and utility corridor analysis for a housing developer, turning the sponsor's business requirements into a database design. Experienced in QA/QC of spatial data from multiple sources, web GIS applications, map production, Esri Field Maps, and CAD-to-GIS coursework, with a prior career in the finance sector that built project leadership, reporting and customer service, business analysis and client communication skills.
+Data analytics, business intelligence, and GIS professional combining over five years of enterprise BI leadership, KPI reporting, and financial analysis with advanced geospatial systems, relational database design, and Python/SQL workflow automation. Currently maintaining enterprise geodatabases and building automated Python data-cleaning pipelines for the Department of National Defence (Environment Team). Previously directed data analytics and MIS reporting teams in the commercial banking sector, translating complex multi-platform datasets into interactive dashboards and executive decision-support tools. Backed by three Google Professional Certificates in Data Analytics, Advanced Data Analytics, and Business Intelligence alongside an MSc in Management, an MBA and BBA in Finance, and a BTech in GIS (in progress at BCIT).
+
+## Verified Google Data Analytics & Business Intelligence Certificates (August 2026)
+
+* **Google Advanced Data Analytics Professional Certificate** (7 Courses, Issued Aug 12, 2026) — [Verify Credential (`4GA65QVI137E`)](https://coursera.org/verify/professional-cert/4GA65QVI137E)
+* **Google Business Intelligence Professional Certificate** (4 Courses, Issued Aug 11, 2026) — [Verify Credential (`2ZDSWBAV2GTJ`)](https://coursera.org/verify/professional-cert/2ZDSWBAV2GTJ)
+* **Google Data Analytics Professional Certificate** (9 Courses, Issued Aug 10, 2026) — [Verify Credential (`UVCBF8P9180H`)](https://coursera.org/verify/professional-cert/UVCBF8P9180H)
 
 ## Website Structure
 
-The portfolio (`index.html`) is organised into five clean sections with an adaptive **Auto / Light / Dark** browser theme:
+The portfolio (`index.html`) is organised into five spacious sections (`900px` max width) with an adaptive **Auto / Light / Dark** browser theme:
 
-1. [**Overview**](https://eshakarim.github.io/#overview) — Profile summary, core technical skills, and direct links to download the PDF resume and `.atbx` toolbox.
-2. [**Experience & Skills**](https://eshakarim.github.io/#experience) — GIS roles at the Department of National Defence (Environment Team) and Renewal Development (Practicum), prior finance and Business Intelligence/MIS roles at TD Canada Trust and Eastern Bank Limited, and technical skills.
-3. [**ArcGIS Pro Toolbox**](https://eshakarim.github.io/#toolbox) — Direct download and descriptions for `ArcGIS_Script_Tools.atbx`.
-4. [**Education & Coursework**](https://eshakarim.github.io/#education) — Degree credentials and expandable transcript course lists for BCIT (BTech in GIS), Stockholm University (MSc in Management), and the Institute of Business Administration, University of Dhaka (MBA & BBA in Finance).
-5. [**Certifications**](https://eshakarim.github.io/#certifications) — Completed Esri MOOCs and Coursera certificates with verification links.
+1. [**Overview**](https://eshakarim.github.io/#overview) — Unified Data Analytics, Business Intelligence, and GIS profile, three core practice pillars, spotlight banner for the three Google Data & BI Professional Certificates, and direct download links.
+2. [**Experience & Skills**](https://eshakarim.github.io/#experience) — 5-domain Core Competency Matrix and filterable 7-role career timeline covering the Department of National Defence (Environment Team), Renewal Development (GIS Practicum), TD Canada Trust, Eastern Bank Limited (Team Lead BI & MIS, Associate Relationship Manager, Management Trainee Officer), and Reebok India.
+3. [**ArcGIS Pro Toolbox**](https://eshakarim.github.io/#toolbox) — Direct download and specifications for `ArcGIS_Script_Tools.atbx` (`StringSearcher`, `SearchAndExtract`, `OSMDownloader`, `BasemapLoader`, and `BatchConvertPytToAtbx`).
+4. [**Education & Coursework**](https://eshakarim.github.io/#education) — 4-degree academic history (WES evaluated Canadian equivalency) with expandable official transcript tables for BCIT (BTech in GIS), Stockholm University (MSc in Management with SGH Warsaw exchange), and the Institute of Business Administration, University of Dhaka (MBA & BBA in Finance).
+5. [**Certifications**](https://eshakarim.github.io/#certifications) — Full course breakdowns and verification links for the three Google Data & BI Professional Certificates, Macquarie University Excel Skills for Business Specialisation, Google Python and Project Management certificates, Esri Spatial Data Science & GIS MOOCs, regulatory licences, and international scholarships.
 
 ## Included ArcGIS Pro Toolbox (`ArcGIS_Script_Tools.atbx`)
 
@@ -28,26 +34,21 @@ This repository hosts [**`ArcGIS_Script_Tools.atbx`**](./ArcGIS_Script_Tools.atb
 | **`BasemapLoader`** | `BasemapLoader.tool` | Automates loading basemaps and reference layers into an active ArcGIS Pro map project (`arcpy.mp.ArcGISProject`). |
 | **`BatchConvertPytToAtbx`** | `BatchConvertPytToAtbx.tool` | Batch-converts Python Toolboxes (`.pyt`) in a workspace directory into ArcGIS Pro (`.atbx`) toolboxes. |
 
-### Quick Installation in ArcGIS Pro
-
-1. Download [**`ArcGIS_Script_Tools.atbx`**](./ArcGIS_Script_Tools.atbx) into your project folder.
-2. Open **ArcGIS Pro** → **Catalog Pane** → right-click **Toolboxes** → select **Add Toolbox**.
-3. Browse to `ArcGIS_Script_Tools.atbx` and click **OK**.
-
 ## Repository Contents
 
-\`\`\`
+```
 EshaKarim.github.io/
-├── index.html                  # 5-page GIS portfolio & resume website
+├── index.html                  # 5-page GIS, Data Analytics & BI portfolio website
 ├── ArcGIS_Script_Tools.atbx    # Custom 5-tool ArcGIS Pro toolbox
-├── Esha_Karim_Resume.pdf       # Downloadable 2-page resume (PDF)
+├── Esha_Karim_Resume.pdf       # Downloadable resume (PDF)
 └── README.md                   # Repository documentation
-\`\`\`
+```
 
-## Contact Esha
+## Contact
 
-* **Name:** Esha Karim
+* **Name:** Esha Karim (BTech GIS Candidate, MSc, MBA, BBA)
 * **Location:** British Columbia, Canada
+* **Phone:** 236-971-0731
 * **Email:** [ekarim4@my.bcit.ca](mailto:ekarim4@my.bcit.ca)
 * **LinkedIn:** [linkedin.com/in/eshakarim](https://www.linkedin.com/in/eshakarim)
-* **Portfolio:** <https://eshakarim.github.io>
+* **GitHub:** [github.com/EshaKarim](https://github.com/EshaKarim)
