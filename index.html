@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Esha Karim | GIS Practitioner &amp; Spatial Analyst Portfolio</title>
-  <meta name="description" content="Professional GIS Portfolio and Resume of Esha Karim — GIS Practitioner maintaining enterprise geodatabases, running spatial analysis, and automating GIS workflows in British Columbia, Canada." />
+  <title>Esha Karim | GIS, Data Analytics &amp; Business Intelligence Specialist</title>
+  <meta name="description" content="Academic and Professional Portfolio of Esha Karim (BTech GIS Candidate, MSc, MBA, BBA) — GIS, Data Analytics & Business Intelligence Specialist in British Columbia, Canada." />
   <meta name="author" content="Esha Karim" />
 
   <!-- Tailwind CSS CDN -->
@@ -195,7 +195,7 @@
       .page-section {
         display: none !important;
       }
-      #page-experience, #page-education, #page-certifications {
+      #page-overview, #page-experience, #page-education, #page-certifications {
         display: block !important;
         margin-bottom: 1.25rem !important;
       }
@@ -218,19 +218,19 @@
 <body class="font-sans antialiased min-h-screen flex flex-col">
 
   <!-- ==========================================================================
-       HEADER & MULTI-PAGE NAVIGATION BAR (MAX-WIDTH 920PX)
+       HEADER & MULTI-PAGE NAVIGATION BAR (MAX-WIDTH 900PX)
        ========================================================================== -->
   <header class="no-print sticky top-0 z-40 surface-card border-t-0 border-x-0">
-    <div class="max-w-[920px] mx-auto px-4 sm:px-6">
+    <div class="max-w-[900px] mx-auto px-4 sm:px-6">
       
       <!-- Top Row: Identity & Theme Switcher -->
       <div class="py-4 flex flex-wrap items-center justify-between gap-4 border-b" style="border-color: var(--border-color);">
         <div>
           <a href="#overview" onclick="navigateTo('overview')" class="font-serif text-xl sm:text-2xl font-bold tracking-tight hover:opacity-85 transition-opacity">
-            Esha Karim
+            Esha Karim <span class="text-xs sm:text-sm font-sans font-normal opacity-75">(BTech GIS Candidate, MSc, MBA, BBA)</span>
           </a>
           <p class="text-xs sm:text-sm mt-0.5" style="color: var(--text-secondary);">
-            GIS Practitioner <span class="mx-1.5 opacity-40">•</span> British Columbia, Canada
+            GIS, Data Analytics &amp; Business Intelligence Specialist <span class="mx-1.5 opacity-40">•</span> British Columbia, Canada
           </p>
         </div>
 
@@ -248,9 +248,9 @@
             </button>
           </div>
 
-          <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium btn-outline" title="Print Resume">
+          <button onclick="window.print()" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium btn-outline" title="Print / Save Academic & Data CV">
             <i class="fa-solid fa-print text-accent"></i>
-            <span>Print Resume</span>
+            <span>Print / Save Academic &amp; Data CV</span>
           </button>
         </div>
       </div>
@@ -279,43 +279,46 @@
   </header>
 
   <!-- ==========================================================================
-       MAIN CONTENT CONTAINER (MAX-WIDTH 920PX, SPACIOUS & UNCLUTTERED)
+       MAIN CONTENT CONTAINER (MAX-WIDTH 900PX, SPACIOUS & UNCLUTTERED)
        ========================================================================== -->
-  <main class="flex-grow max-w-[920px] w-full mx-auto px-4 sm:px-6 py-8 sm:py-11">
+  <main class="flex-grow max-w-[900px] w-full mx-auto px-4 sm:px-6 py-8 sm:py-11">
 
     <!-- ========================================================================
          PAGE 1: OVERVIEW (#overview)
          ======================================================================== -->
     <section id="page-overview" class="page-section active space-y-8">
       
-      <!-- Profile Summary Card (Directly from Resume_4_VGIS.pdf) -->
+      <!-- Profile Summary Card -->
       <div class="surface-card rounded-xl p-6 sm:p-8 shadow-sm">
         <div class="flex flex-col md:flex-row md:items-start justify-between gap-6">
           <div class="space-y-3">
             <p class="text-xs font-mono uppercase tracking-wider text-accent font-semibold">
-              GIS Portfolio &amp; Resume
+              Academic &amp; Professional Portfolio
             </p>
             <h1 class="font-serif text-3xl sm:text-4xl font-bold tracking-tight">
               Esha Karim
             </h1>
-            <p class="text-base sm:text-lg leading-relaxed" style="color: var(--text-secondary);">
-              GIS Practitioner <span class="mx-1 opacity-50">|</span> Enterprise Geodatabases, Spatial Analysis &amp; Workflow Automation (FME, ArcPy, ModelBuilder)
+            <p class="text-xs sm:text-sm font-mono" style="color: var(--text-muted);">
+              BTech GIS Candidate (BCIT) • MSc in Management (Stockholm) • MBA &amp; BBA in Finance (IBA, Dhaka)
+            </p>
+            <p class="text-base sm:text-lg font-medium leading-relaxed" style="color: var(--text-primary);">
+              GIS, Data Analytics &amp; Business Intelligence Specialist
             </p>
 
             <!-- Action Buttons -->
             <div class="no-print pt-2 flex flex-wrap items-center gap-2.5">
-              <button onclick="navigateTo('experience')" class="btn-primary px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
-                <i class="fa-solid fa-briefcase"></i>
-                <span>View Experience &amp; Skills</span>
-              </button>
-              <a href="./Esha_Karim_Resume.pdf" download="Esha_Karim_Resume.pdf" class="btn-outline px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
-                <i class="fa-regular fa-file-pdf text-accent"></i>
-                <span>Download Resume (PDF)</span>
+              <a href="./Esha_Karim_Resume.pdf" download="Esha_Karim_Resume.pdf" class="btn-primary px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+                <i class="fa-regular fa-file-pdf"></i>
+                <span>Download CV (PDF)</span>
               </a>
-              <button onclick="navigateTo('toolbox')" class="btn-outline px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
-                <i class="fa-solid fa-toolbox text-accent"></i>
-                <span>ArcGIS Pro Toolbox (5 Tools)</span>
+              <button onclick="window.print()" class="btn-outline px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+                <i class="fa-solid fa-print text-accent"></i>
+                <span>Print / Save Academic &amp; Data CV</span>
               </button>
+              <a href="./ArcGIS_Script_Tools.atbx" download="ArcGIS_Script_Tools.atbx" onclick="notifyToolboxDownload()" class="btn-outline px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
+                <i class="fa-solid fa-toolbox text-accent"></i>
+                <span>Download ArcGIS Toolbox</span>
+              </a>
             </div>
           </div>
 
@@ -334,7 +337,7 @@
                 <i class="fa-regular fa-envelope w-4 text-center text-accent"></i>
                 <a href="mailto:ekarim4@my.bcit.ca" class="hover:underline font-mono text-xs">ekarim4@my.bcit.ca</a>
               </div>
-              <button onclick="copyToClipboard('ekarim4@my.bcit.ca', 'Email copied')" class="text-[11px] opacity-60 hover:opacity-100" title="Copy Email">
+              <button onclick="copyToClipboard('ekarim4@my.bcit.ca', 'Email copied')" class="no-print text-[11px] opacity-60 hover:opacity-100" title="Copy Email">
                 <i class="fa-regular fa-copy"></i>
               </button>
             </div>
@@ -344,68 +347,127 @@
             </div>
             <div class="flex items-center gap-2.5 pt-1.5 border-t" style="border-color: var(--border-color);">
               <i class="fa-brands fa-github w-4 text-center text-accent"></i>
-              <a href="https://github.com/EshaKarim" target="_blank" rel="noopener noreferrer" class="hover:underline">EshaKarim.github.io</a>
+              <a href="https://github.com/EshaKarim" target="_blank" rel="noopener noreferrer" class="hover:underline">github.com/EshaKarim</a>
             </div>
           </div>
         </div>
 
-        <!-- Profile Statement (Directly from Resume_4_VGIS.pdf) -->
+        <!-- Unified Professional Profile -->
         <div class="mt-6 pt-6 border-t space-y-2.5 text-sm sm:text-base leading-relaxed" style="border-color: var(--border-color); color: var(--text-secondary);">
-          <h2 class="font-mono text-xs uppercase tracking-wider text-accent font-semibold">Profile</h2>
+          <h2 class="font-mono text-xs uppercase tracking-wider text-accent font-semibold">Unified Professional Profile</h2>
           <p>
-            GIS practitioner currently maintaining enterprise geodatabases, running spatial analysis and automating GIS workflows with FME, Python (ArcPy) and ModelBuilder. Completed a GIS practicum building a relational geodatabase and utility corridor analysis for a housing developer, turning the sponsor's business requirements into a database design. Experienced in QA/QC of spatial data from multiple sources, web GIS applications, map production, Esri Field Maps, and CAD-to-GIS coursework, with a prior career in the finance sector that built project leadership, reporting and customer service, business analysis and client communication skills.
+            Data analytics, business intelligence, and GIS professional combining over five years of enterprise BI leadership, KPI reporting, and financial analysis with advanced geospatial systems, relational database design, and Python/SQL workflow automation. Currently maintaining enterprise geodatabases and building automated Python data-cleaning pipelines for the Department of National Defence (Environment Team). Previously directed data analytics and MIS reporting teams in the commercial banking sector, translating complex multi-platform datasets into interactive dashboards and executive decision-support tools. Backed by three Google Professional Certificates in Data Analytics, Advanced Data Analytics, and Business Intelligence alongside an MSc in Management, an MBA and BBA in Finance, and a BTech in GIS (in progress at BCIT).
           </p>
         </div>
       </div>
 
-      <!-- Technical Skills Summary Grid (5 Categories from Resume) -->
+      <!-- 3 Core Pillar Cards -->
       <div class="space-y-4">
         <div class="flex items-center justify-between">
-          <h2 class="font-serif text-xl font-bold">Core Technical Competencies</h2>
-          <button onclick="navigateTo('experience')" class="text-xs font-mono text-accent hover:underline">
-            Full Experience &amp; Skills →
+          <h2 class="font-serif text-xl font-bold">Core Practice Pillars</h2>
+          <button onclick="navigateTo('experience')" class="no-print text-xs font-mono text-accent hover:underline">
+            Explore Full Experience &amp; Skills →
           </button>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="surface-card rounded-xl p-5">
-            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
-              <i class="fa-solid fa-map text-accent text-sm"></i>
-              <span>GIS &amp; Mapping</span>
-            </h3>
-            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
-              ArcGIS Pro, ArcGIS Enterprise, ArcGIS Online, QGIS, Esri Field Maps, web and mobile GIS applications, ModelBuilder, cartographic design, map series and layout automation, georeferencing, geoprocessing.
-            </p>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Pillar 1 -->
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-lg subtle-box flex items-center justify-center text-accent mb-3">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+              <h3 class="font-serif font-bold text-base">Data Analytics &amp; Business Intelligence</h3>
+              <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
+                5+ years designing KPI reports, executive briefings, and interactive dashboards (Power BI, Tableau, Advanced Excel), statistical and regression modelling (Python, R, SPSS), and corporate financial/credit analysis.
+              </p>
+            </div>
           </div>
 
-          <div class="surface-card rounded-xl p-5">
-            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
-              <i class="fa-solid fa-layer-group text-accent text-sm"></i>
-              <span>Spatial Analysis</span>
-            </h3>
-            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
-              Multi-criteria decision analysis, site suitability, zoning and land-use analysis, terrain analysis (slope rasters), raster and vector analysis, constraint mapping, spatial statistics, SPSS, remote sensing.
-            </p>
+          <!-- Pillar 2 -->
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-lg subtle-box flex items-center justify-center text-accent mb-3">
+                <i class="fa-solid fa-database"></i>
+              </div>
+              <h3 class="font-serif font-bold text-base">Database Architecture &amp; ETL Automation</h3>
+              <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
+                Relational database design and administration (PostgreSQL/PostGIS, pgAdmin 4, DBeaver, MS Access, MySQL, enterprise geodatabases), SQL querying, and automated Python/FME data-cleaning pipelines.
+              </p>
+            </div>
           </div>
 
-          <div class="surface-card rounded-xl p-5">
-            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
-              <i class="fa-solid fa-database text-accent text-sm"></i>
-              <span>Data Management</span>
-            </h3>
-            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
-              Enterprise and file geodatabases, relational schema design, SQL, PostgreSQL/PostGIS (pgAdmin, DBeaver, LibreOffice Base, QGIS database connections), pgModeler, visual query design, database queries, attribute QA/QC, DataBC, GeoBC and CanVec integration, reprojection and harmonization, data standards, CAD for GIS.
-            </p>
+          <!-- Pillar 3 -->
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="w-9 h-9 rounded-lg subtle-box flex items-center justify-center text-accent mb-3">
+                <i class="fa-solid fa-map-location-dot"></i>
+              </div>
+              <h3 class="font-serif font-bold text-base">Geospatial Analysis &amp; Custom Toolboxes</h3>
+              <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
+                Multi-criteria decision analysis (MCDA), Species at Risk habitat modelling, CAD-to-GIS integration, Esri Field Maps workflows, and open-source ArcGIS Pro script tools (<code>ArcGIS_Script_Tools.atbx</code>).
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Featured Highlight Banner: Three Google Data & BI Professional Certificates -->
+      <div class="surface-card rounded-xl p-6 space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b pb-3" style="border-color: var(--border-color);">
+          <div>
+            <span class="font-mono text-xs uppercase tracking-wider text-accent font-semibold">Verified Data &amp; BI Credentials (Completed August 2026)</span>
+            <h2 class="font-serif text-xl font-bold mt-0.5">Three Google Data Analytics &amp; Business Intelligence Professional Certificates</h2>
+          </div>
+          <button onclick="navigateTo('certifications')" class="no-print text-xs font-mono text-accent hover:underline">
+            All Course Breakdowns →
+          </button>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <!-- Cert 1 -->
+          <div class="subtle-box rounded-lg p-4 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] font-mono text-accent font-semibold">7 Courses • Aug 12, 2026</div>
+              <h3 class="font-serif font-bold text-sm sm:text-base mt-1">Google Advanced Data Analytics Professional Certificate</h3>
+              <p class="text-xs mt-1.5 leading-relaxed" style="color: var(--text-secondary);">
+                Data science foundations, statistical power, regression modelling, machine learning, and Python analytics capstone.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/professional-cert/4GA65QVI137E" target="_blank" rel="noopener noreferrer" class="mt-3 pt-2.5 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify: 4GA65QVI137E</span>
+              <span>↗</span>
+            </a>
           </div>
 
-          <div class="surface-card rounded-xl p-5">
-            <h3 class="font-serif font-semibold text-base flex items-center gap-2">
-              <i class="fa-solid fa-code text-accent text-sm"></i>
-              <span>Programming &amp; Reporting</span>
-            </h3>
-            <p class="text-xs sm:text-sm mt-2 leading-relaxed" style="color: var(--text-secondary);">
-              FME, Python (ArcPy), regular expressions, SQL, ArcGIS script tools, workflow automation and integration (ETL) for data cleanup, CAD-to-GIS conversion, geoPDF conversion, overlap resolution and map production; Microsoft Office Suite (advanced Excel), Microsoft BI, Tableau, dashboards, technical briefs, SOPs.
-            </p>
+          <!-- Cert 2 -->
+          <div class="subtle-box rounded-lg p-4 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] font-mono text-accent font-semibold">4 Courses • Aug 11, 2026</div>
+              <h3 class="font-serif font-bold text-sm sm:text-base mt-1">Google Business Intelligence Professional Certificate</h3>
+              <p class="text-xs mt-1.5 leading-relaxed" style="color: var(--text-secondary);">
+                BI foundations, relational data models, ETL pipelines, and executive decision-support dashboard design.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/professional-cert/2ZDSWBAV2GTJ" target="_blank" rel="noopener noreferrer" class="mt-3 pt-2.5 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify: 2ZDSWBAV2GTJ</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="subtle-box rounded-lg p-4 flex flex-col justify-between">
+            <div>
+              <div class="text-[11px] font-mono text-accent font-semibold">9 Courses • Aug 10, 2026</div>
+              <h3 class="font-serif font-bold text-sm sm:text-base mt-1">Google Data Analytics Professional Certificate</h3>
+              <p class="text-xs mt-1.5 leading-relaxed" style="color: var(--text-secondary);">
+                End-to-end data preparation, cleaning, SQL querying, Tableau visualisation, and Python data analysis.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/professional-cert/UVCBF8P9180H" target="_blank" rel="noopener noreferrer" class="mt-3 pt-2.5 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify: UVCBF8P9180H</span>
+              <span>↗</span>
+            </a>
           </div>
         </div>
       </div>
@@ -423,7 +485,7 @@
             Includes five custom Python (<code>arcpy</code>) script tools: <strong>StringSearcher</strong>, <strong>SearchAndExtract</strong>, <strong>OSMDownloader</strong>, <strong>BasemapLoader</strong>, and <strong>BatchConvertPytToAtbx</strong>.
           </p>
         </div>
-        <div class="flex flex-wrap gap-2.5 shrink-0">
+        <div class="no-print flex flex-wrap gap-2.5 shrink-0">
           <a href="./ArcGIS_Script_Tools.atbx" download="ArcGIS_Script_Tools.atbx" onclick="notifyToolboxDownload()" class="btn-primary px-4 py-2.5 rounded-lg text-xs sm:text-sm font-medium inline-flex items-center gap-2">
             <i class="fa-solid fa-download"></i>
             <span>Download .atbx</span>
@@ -443,33 +505,102 @@
       
       <div class="border-b pb-4 flex flex-wrap items-end justify-between gap-4" style="border-color: var(--border-color);">
         <div>
-          <p class="text-xs font-mono uppercase tracking-wider text-accent">Professional History &amp; Technical Stack</p>
+          <p class="text-xs font-mono uppercase tracking-wider text-accent">Competency Matrix &amp; Career History</p>
           <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-1">Experience &amp; Technical Skills</h1>
         </div>
+      </div>
 
-        <!-- Filter Pills -->
+      <!-- Interactive Core Competency Matrix (5 Categories) -->
+      <div class="surface-card rounded-xl p-6 space-y-5">
+        <div class="flex flex-wrap items-center justify-between gap-2 border-b pb-3" style="border-color: var(--border-color);">
+          <h2 class="font-serif text-xl font-bold">Core Competency Matrix</h2>
+          <span class="font-mono text-xs text-accent">5 Specialised Domains</span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm leading-relaxed">
+          <!-- Category 1 -->
+          <div class="subtle-box rounded-lg p-4 space-y-1.5">
+            <h3 class="font-serif font-bold text-base flex items-center gap-2" style="color: var(--text-primary);">
+              <i class="fa-solid fa-chart-pie text-accent text-xs"></i>
+              <span>Data Analytics &amp; Business Intelligence</span>
+            </h3>
+            <p style="color: var(--text-secondary);">
+              Power BI, Tableau, Advanced Microsoft Excel (PivotTables, VLOOKUP, complex modelling, dashboarding), KPI Reporting, Statistical &amp; Regression Analysis, Predictive Modelling, Machine Learning Foundations, SPSS, R.
+            </p>
+          </div>
+
+          <!-- Category 2 -->
+          <div class="subtle-box rounded-lg p-4 space-y-1.5">
+            <h3 class="font-serif font-bold text-base flex items-center gap-2" style="color: var(--text-primary);">
+              <i class="fa-solid fa-server text-accent text-xs"></i>
+              <span>Database &amp; Data Engineering (ETL)</span>
+            </h3>
+            <p style="color: var(--text-secondary);">
+              SQL, Python (Data Cleaning, Automation, Pandas/SciPy workflows, ArcPy), Safe Software FME, Relational Schema Design, PostgreSQL/PostGIS, pgAdmin 4, DBeaver, MS Access, MySQL, pgModeler, Attribute QA/QC, Data Governance Protocols.
+            </p>
+          </div>
+
+          <!-- Category 3 -->
+          <div class="subtle-box rounded-lg p-4 space-y-1.5">
+            <h3 class="font-serif font-bold text-base flex items-center gap-2" style="color: var(--text-primary);">
+              <i class="fa-solid fa-earth-americas text-accent text-xs"></i>
+              <span>GIS &amp; Spatial Systems</span>
+            </h3>
+            <p style="color: var(--text-secondary);">
+              ArcGIS Pro, ArcGIS Enterprise, ArcGIS Online, QGIS, Esri Field Maps, ModelBuilder, Cartographic Design, Map Series Automation, Multi-Criteria Decision Analysis (MCDA), Terrain &amp; Slope Raster Analysis, Remote Sensing, CAD for GIS.
+            </p>
+          </div>
+
+          <!-- Category 4 -->
+          <div class="subtle-box rounded-lg p-4 space-y-1.5">
+            <h3 class="font-serif font-bold text-base flex items-center gap-2" style="color: var(--text-primary);">
+              <i class="fa-solid fa-scale-balanced text-accent text-xs"></i>
+              <span>Financial &amp; Business Analysis</span>
+            </h3>
+            <p style="color: var(--text-secondary);">
+              Corporate Financial Statement Analysis, Credit Risk &amp; Fundamental Industry Analysis, Budgetary Revenue Harmonisation, Business Requirements Analysis, Standard Operating Procedures (SOPs), Audit-Ready Documentation.
+            </p>
+          </div>
+
+          <!-- Category 5 -->
+          <div class="subtle-box rounded-lg p-4 space-y-1.5 md:col-span-2">
+            <h3 class="font-serif font-bold text-base flex items-center gap-2" style="color: var(--text-primary);">
+              <i class="fa-solid fa-users-gear text-accent text-xs"></i>
+              <span>Leadership &amp; Project Delivery</span>
+            </h3>
+            <p style="color: var(--text-secondary);">
+              Analytics Team Leadership &amp; Mentorship, Project Lifecycle Management, Cross-Departmental Deliverable Tracking, Stakeholder &amp; Executive Briefing, OCAP® Principles &amp; Indigenous Data Sovereignty familiarity.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Experience Header & Filter Pills -->
+      <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+        <h2 class="font-serif text-xl sm:text-2xl font-bold">Professional Experience Timeline</h2>
+
         <div class="no-print flex flex-wrap items-center gap-1.5 text-xs">
           <button onclick="filterExperience('all')" id="exp-filter-all" class="filter-pill active px-3 py-1.5 rounded-lg">
-            All Roles (5)
+            All Roles (7)
           </button>
           <button onclick="filterExperience('gis')" id="exp-filter-gis" class="filter-pill px-3 py-1.5 rounded-lg">
-            GIS Experience (2)
+            GIS &amp; Spatial Data (2)
           </button>
           <button onclick="filterExperience('other')" id="exp-filter-other" class="filter-pill px-3 py-1.5 rounded-lg">
-            Finance &amp; BI Experience (3)
+            Data Analytics, BI &amp; Finance (5)
           </button>
         </div>
       </div>
 
-      <!-- GIS & Other Experience Cards (Strictly from Resume_4_VGIS.pdf & Esha_Karim_Resume_26-U115.pdf) -->
+      <!-- 7 Professional Experience Cards -->
       <div class="space-y-4" id="experience-list">
 
-        <!-- GIS Role 1 -->
+        <!-- Role 1: DND -->
         <article data-exp-category="gis" class="exp-card surface-card rounded-xl p-6 space-y-3">
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
-              <span class="font-mono text-xs text-accent font-semibold">GIS Experience</span>
-              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">GIS Specialist / Student, Environment Team</h2>
+              <span class="font-mono text-xs text-accent font-semibold">GIS &amp; Spatial Data Automation</span>
+              <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">GIS Specialist / Student, Environment Team</h3>
               <p class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
                 Department of National Defence (CFB Suffield Detachment), Chilliwack, BC
               </p>
@@ -477,121 +608,123 @@
             <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box shrink-0">Jun 2026 – Present</span>
           </div>
           <ul class="space-y-1.5 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
-            <li>Maintain enterprise geodatabase layers covering environmental monitoring, restricted land use buffers and federal regulatory reporting.</li>
-            <li>Run multi-criteria spatial analysis to delineate Species at Risk critical habitat; results are written up as geospatial reports used in resource management and land access decisions.</li>
-            <li>Built Python pipelines (AddaxAI, Perch 2.0) that parse, clean and standardize ecological field survey data for loading into the geodatabase, removing manual entry errors and shortening review cycles.</li>
-            <li>Acquire, quality-control, reproject and integrate provincial (DataBC, GeoBC) and federal (CanVec) datasets to keep regional topographic and cadastral base layers current.</li>
+            <li>Maintain enterprise geodatabase layers covering environmental monitoring, restricted land-use buffers, and federal regulatory compliance reporting.</li>
+            <li>Run multi-criteria spatial data analysis to delineate Species at Risk (SAR) critical habitat, authoring geospatial reports used in resource management and land access decisions.</li>
+            <li>Built automated algorithm-based Python data-processing pipelines (AddaxAI, Perch 2.0) that parse, clean, and standardise ecological field survey data for geodatabase loading, eliminating manual entry errors and shortening review cycles.</li>
+            <li>Acquire, quality-control, reproject, and integrate provincial (DataBC, GeoBC) and federal (CanVec) datasets to maintain current regional topographic and cadastral base layers.</li>
           </ul>
         </article>
 
-        <!-- GIS Role 2 -->
+        <!-- Role 2: Renewal Development -->
         <article data-exp-category="gis" class="exp-card surface-card rounded-xl p-6 space-y-3">
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
-              <span class="font-mono text-xs text-accent font-semibold">GIS Experience</span>
-              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">GIS and Planning Specialist (Practicum)</h2>
+              <span class="font-mono text-xs text-accent font-semibold">GIS &amp; Relational Database Design</span>
+              <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">GIS and Planning Specialist (Practicum)</h3>
               <p class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
-                Renewal Development, sustainable housing developer, Vancouver, BC
+                Renewal Development, Vancouver, BC
               </p>
             </div>
             <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box shrink-0">Jan 2026 – May 2026</span>
           </div>
           <ul class="space-y-1.5 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
-            <li>Designed a central relational geodatabase from scratch, with standard attribute schemas, entity relationships and access controls for tracking multiple properties.</li>
-            <li>Developed a multi-criteria model combining zoning bylaws, slope rasters, infrastructure corridors and clearance buffers to rank parcel suitability.</li>
-            <li>Set up mobile data collection in Esri Field Maps and wrote SOPs for data capture, QA/QC and field verification.</li>
-            <li>Wrote ArcPy scripts to split a master map into per-layer maps, resolve polygon overlaps by priority score, and harmonize string attributes on habitat layers.</li>
-            <li>Reported progress to the sponsor's GIS lead and assessment teams and to a faculty advisor, and collaborated with a project partner to coordinate deliverables.</li>
+            <li>Planned, designed, and deployed a central relational geodatabase from scratch with standard attribute schemas, entity relationships, and access controls for tracking multiple properties.</li>
+            <li>Built a Python data-cleaning workflow to resolve field-collected Esri Field Maps entries into analysis-ready records and authored SOPs for data capture, QA/QC, and field verification.</li>
+            <li>Developed a multi-criteria decision analysis (MCDA) model combining zoning bylaws, slope rasters, road-network data, infrastructure corridors, and clearance buffers to rank parcel suitability and support strategic relocation decisions.</li>
+            <li>Wrote custom ArcPy scripts to split a master map into per-layer maps, resolve polygon overlaps by priority score, and harmonise string attributes on habitat layers.</li>
           </ul>
         </article>
 
-        <!-- Other Professional Experience Role 1 -->
+        <!-- Role 3: TD Canada Trust -->
         <article data-exp-category="other" class="exp-card surface-card rounded-xl p-6 space-y-2.5">
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
-              <span class="font-mono text-xs" style="color: var(--text-muted);">Other Professional Experience</span>
-              <h2 class="font-serif text-lg font-bold mt-0.5">Financial Services Representative</h2>
+              <span class="font-mono text-xs text-accent font-semibold">Financial Services &amp; Regulatory Compliance</span>
+              <h3 class="font-serif text-lg font-bold mt-0.5">Financial Services Representative</h3>
               <p class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
                 TD Canada Trust, British Columbia
               </p>
             </div>
             <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box shrink-0">Mar 2022 – Jul 2025</span>
           </div>
-          <ul class="space-y-1 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
-            <li>Client-facing customer service role in a regulated environment; answered client enquiries, resolved documentation discrepancies and kept files audit-ready.</li>
+          <ul class="space-y-1.5 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
+            <li>Conducted frontline client needs assessments and delivered tailored, data-informed financial solutions in a high-volume, regulated banking environment.</li>
+            <li>Resolved complex documentation discrepancies, maintained audit-ready records, and ensured strict compliance with regulatory and data-privacy standards.</li>
           </ul>
         </article>
 
-        <!-- Other Professional Experience Role 2 -->
+        <!-- Role 4: EBL Team Lead BI & MIS -->
         <article data-exp-category="other" class="exp-card surface-card rounded-xl p-6 space-y-2.5">
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
-              <span class="font-mono text-xs" style="color: var(--text-muted);">Other Professional Experience</span>
-              <h2 class="font-serif text-lg font-bold mt-0.5">Team Lead, Business Intelligence and MIS</h2>
+              <span class="font-mono text-xs text-accent font-semibold">Data Analytics, Business Intelligence &amp; MIS Leadership</span>
+              <h3 class="font-serif text-lg font-bold mt-0.5">Team Lead, Business Intelligence &amp; Management Information Systems (Senior Associate Manager)</h3>
               <p class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
-                Eastern Bank Limited, Dhaka, Bangladesh
+                Eastern Bank Limited (EBL), Dhaka, Bangladesh
               </p>
             </div>
             <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box shrink-0">Mar 2017 – Jan 2020</span>
           </div>
           <ul class="space-y-1.5 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
-            <li>Led and mentored a team of data analysts; set project schedules, assigned work and tracked cross-department deliverables.</li>
-            <li>Wrote data governance protocols, operating manuals and quality-control standards that met internal audit requirements.</li>
-            <li>Built decision-support dashboards and statistical and narrative briefing reports for senior leadership.</li>
+            <li>Directed and mentored a team of data analysts; established project schedules, assigned analytical workflows, and tracked cross-departmental deliverables for the corporate banking division.</li>
+            <li>Engineered and administered relational MIS databases, enforcing data-governance protocols, operating manuals, and quality-control standards that met internal audit requirements.</li>
+            <li>Designed and deployed interactive, data-driven dashboards and weekly, monthly, quarterly, and annual KPI review reports consumed by senior leadership and executive management.</li>
+            <li>Partnered with the financial planning team to harmonise corporate banking performance with budgeted revenue targets and allocate business goals across corporate units.</li>
           </ul>
         </article>
 
-        <!-- Other Professional Experience Role 3 -->
+        <!-- Role 5: EBL Associate Relationship Manager -->
         <article data-exp-category="other" class="exp-card surface-card rounded-xl p-6 space-y-2.5">
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
-              <span class="font-mono text-xs" style="color: var(--text-muted);">Other Professional Experience</span>
-              <h2 class="font-serif text-lg font-bold mt-0.5">Associate Relationship Manager, Commercial Finance / Commercial Banking</h2>
+              <span class="font-mono text-xs text-accent font-semibold">Quantitative Financial &amp; Credit Analysis</span>
+              <h3 class="font-serif text-lg font-bold mt-0.5">Associate Relationship Manager, Commercial &amp; Corporate Banking</h3>
               <p class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
-                Eastern Bank Limited, Dhaka, Bangladesh
+                Eastern Bank Limited (EBL), Dhaka, Bangladesh
               </p>
             </div>
             <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box shrink-0">Jan 2012 – Jul 2014</span>
           </div>
-          <ul class="space-y-1 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
-            <li>Primary contact for commercial clients; visited sites and reviewed title boundaries, lease agreements and developer commitments.</li>
+          <ul class="space-y-1.5 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
+            <li>Executed quantitative financial, credit, and fundamental industry analysis on large corporate datasets, translating financial statements and secondary market research into data-driven credit proposals, memos, and annual review reports.</li>
+            <li>Maintained customer information data repositories, conducted site inspections, and reviewed title boundaries, lease agreements, and developer commitments.</li>
           </ul>
         </article>
 
-      </div>
-
-      <!-- Technical Skills & Additional Qualifications (Verbatim from Resumes) -->
-      <div class="surface-card rounded-xl p-6 space-y-5">
-        <h2 class="font-serif text-xl font-bold border-b pb-2" style="border-color: var(--border-color);">
-          Technical Skills &amp; Additional Qualifications
-        </h2>
-
-        <div class="space-y-3 text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
-          <div>
-            <strong style="color: var(--text-primary);">GIS and mapping:</strong> ArcGIS Pro, ArcGIS Enterprise, ArcGIS Online, QGIS, Esri Field Maps, web and mobile GIS applications, ModelBuilder, cartographic design, map series and layout automation, georeferencing, geoprocessing
+        <!-- Role 6: EBL Management Trainee Officer -->
+        <article data-exp-category="other" class="exp-card surface-card rounded-xl p-6 space-y-2.5">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">Corporate Banking &amp; Financial Statement Analysis</span>
+              <h3 class="font-serif text-lg font-bold mt-0.5">Management Trainee Officer</h3>
+              <p class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
+                Eastern Bank Limited (EBL), Dhaka, Bangladesh
+              </p>
+            </div>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box shrink-0">Jan 2011 – Dec 2011</span>
           </div>
-          <div>
-            <strong style="color: var(--text-primary);">Analysis:</strong> Multi-criteria decision analysis, site suitability, zoning and land-use analysis, terrain analysis (slope rasters), raster and vector analysis, constraint mapping, spatial statistics, SPSS, remote sensing
-          </div>
-          <div>
-            <strong style="color: var(--text-primary);">Data management:</strong> Enterprise and file geodatabases, relational schema design, SQL, PostgreSQL/PostGIS (pgAdmin, DBeaver, LibreOffice Base, QGIS database connections), pgModeler, visual query design, database queries, attribute QA/QC, DataBC, GeoBC and CanVec integration, reprojection and harmonization, data standards, CAD for GIS
-          </div>
-          <div>
-            <strong style="color: var(--text-primary);">Programming:</strong> FME, Python (ArcPy), regular expressions, SQL, ArcGIS script tools, workflow automation and integration (ETL) for data cleanup, CAD-to-GIS conversion, geoPDF conversion, overlap resolution and map production
-          </div>
-          <div>
-            <strong style="color: var(--text-primary);">Office and reporting:</strong> Microsoft Office Suite (advanced Excel), Microsoft BI, Tableau, dashboards, business requirements analysis, technical briefs, presentations, standard operating procedures
-          </div>
-        </div>
-
-        <div class="pt-3 border-t space-y-1.5 text-xs sm:text-sm" style="border-color: var(--border-color); color: var(--text-secondary);">
-          <div class="font-mono text-xs uppercase tracking-wider text-accent font-semibold">Additional</div>
-          <ul class="list-disc list-outside ml-4 space-y-1">
-            <li>Valid BC Class 5 driver's licence and access to a reliable vehicle</li>
-            <li>Pilot Certificate – Small Remotely Piloted Aircraft (VLOS), Basic Operations (Basic drone / RPAS pilot licence)</li>
-            <li>Familiar with OCAP® principles and Indigenous data sovereignty in spatial data handling</li>
+          <ul class="space-y-1 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
+            <li>Completed rotational training across banking divisions (adjunct to Corporate Banking and HR Management), performing corporate financial statement analysis, preliminary credit assessments, and industry research.</li>
           </ul>
-        </div>
+        </article>
+
+        <!-- Role 7: Reebok India Research Intern -->
+        <article data-exp-category="other" class="exp-card surface-card rounded-xl p-6 space-y-2.5">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">Primary Data Collection &amp; Quantitative/Qualitative Analysis</span>
+              <h3 class="font-serif text-lg font-bold mt-0.5">Research Intern</h3>
+              <p class="text-xs sm:text-sm font-medium" style="color: var(--text-secondary);">
+                Reebok India
+              </p>
+            </div>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box shrink-0">Oct 2010 – Nov 2010</span>
+          </div>
+          <ul class="space-y-1 text-xs sm:text-sm list-disc list-outside ml-4 leading-relaxed" style="color: var(--text-secondary);">
+            <li>Conducted primary data collection (surveys, focus group discussions, and interviews), quantitative/qualitative analysis, and report preparation for the joint Reebok and Grameen Creative Lab project.</li>
+          </ul>
+        </article>
+
       </div>
 
       <!-- Page Footer Navigation -->
@@ -820,7 +953,7 @@
                 <span class="text-xs" style="color: var(--text-muted);">— Basemap &amp; Reference Layer Loader (<code>BasemapLoader.tool</code>)</span>
               </div>
               <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
-                Automates loading basemaps and reference layers into an active ArcGIS Pro map project (<code>arcpy.mp.ArcGISProject</code>) to speed up map setup and standardize project layouts.
+                Automates loading basemaps and reference layers into an active ArcGIS Pro map project (<code>arcpy.mp.ArcGISProject</code>) to speed up map setup and standardise project layouts.
               </p>
             </div>
             <button onclick="copyToolSnippet('BasemapLoader')" class="no-print btn-outline px-3 py-1.5 rounded-lg text-xs font-mono inline-flex items-center gap-1.5 shrink-0">
@@ -915,8 +1048,11 @@
       
       <div class="border-b pb-4 flex flex-wrap items-end justify-between gap-4" style="border-color: var(--border-color);">
         <div>
-          <p class="text-xs font-mono uppercase tracking-wider text-accent">Academic Credentials &amp; Transcripts</p>
+          <p class="text-xs font-mono uppercase tracking-wider text-accent">Academic Credentials &amp; Official Transcripts</p>
           <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-1">Education &amp; Coursework</h1>
+          <p class="text-xs sm:text-sm mt-1" style="color: var(--text-secondary);">
+            International graduate and undergraduate degrees evaluated as equivalent Canadian qualifications by World Education Services (WES).
+          </p>
         </div>
         <span class="font-mono text-xs px-3 py-1.5 rounded-lg subtle-box">
           WES Evaluated Canadian Equivalency
@@ -930,17 +1066,18 @@
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
               <span class="font-mono text-xs text-accent font-semibold">British Columbia Institute of Technology (BCIT), Burnaby, BC</span>
-              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Bachelor of Technology, Geographic Information Systems</h2>
+              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Bachelor of Technology (BTech) in Geographic Information Systems</h2>
             </div>
-            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">2025 – expected 2027</span>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">2025 – Expected 2027</span>
           </div>
           <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
-            <strong>Coursework:</strong> Spatial Analysis, GIS Digital Map/Cartography, GIS Programming 1 and 2, GIS Database Systems 1 and 2, CAD for GIS, GIS Remote Sensing, 3D GIS, ArcGIS 1–3, Management Issues in GIS, and a 13-credit GIS project.
+            <strong>66.00 Credits Completed | Overall GPA: 78%</strong> (Fall 2025 GPA: 76%, Winter 2026 GPA: 80%; all Advanced Diploma GIS technical coursework completed, remaining liberal studies in progress).<br />
+            <strong>Core Technical Coursework:</strong> Spatial Analysis (91%), Management Issues in GIS (89%), ArcGIS 1: Introduction (87%), ArcGIS 2: Data Management/Analysis (86%), GIS Digital Map/Cartography (84%), GIS Project (13.0 credits, 82%), GIS Computing and the Internet (82%), ArcGIS 3: Customisation/Modelling (81%), Geospatial Systems Management (81%), GIS Programming 1 &amp; 2, GIS Database Systems 1 &amp; 2, 3D GIS, GIS Remote Sensing, CAD for GIS.
           </p>
 
           <details class="subtle-box rounded-lg p-3.5 text-xs">
             <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
-              <span>View BCIT Transcript Course List (66.00 Earned Credits, Overall GPA: 78%)</span>
+              <span>View Official BCIT Transcript Course List (66.00 Earned Credits, Overall GPA: 78%)</span>
               <i class="fa-solid fa-chevron-down text-[10px]"></i>
             </summary>
             <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
@@ -949,43 +1086,43 @@
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7010 — GIS Programming 1 (3.00 Cr)</span>
-                <span class="font-mono">78</span>
+                <span class="font-mono">78%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7100 — Fundamentals of GIS (3.00 Cr)</span>
-                <span class="font-mono">68</span>
+                <span class="font-mono">68%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7108 — Fundamentals of Mapping (3.00 Cr)</span>
-                <span class="font-mono">65</span>
+                <span class="font-mono">65%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7111 — CAD For GIS (3.00 Cr)</span>
-                <span class="font-mono">73</span>
+                <span class="font-mono">73%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7120 — GIS Project/Practicum Planning (3.00 Cr)</span>
-                <span class="font-mono">76</span>
+                <span class="font-mono">76%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7128 — ArcGIS 1: Introduction (3.00 Cr)</span>
-                <span class="font-mono">87</span>
+                <span class="font-mono">87%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7130 — GIS Comp and the Internet (3.00 Cr)</span>
-                <span class="font-mono">82</span>
+                <span class="font-mono">82%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 7132 — GIS Database Systems 1 (3.00 Cr)</span>
-                <span class="font-mono">67</span>
+                <span class="font-mono">67%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8118 — GIS Remote Sensing (3.00 Cr)</span>
-                <span class="font-mono">74</span>
+                <span class="font-mono">74%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8128 — ArcGIS 2: Data Mgmt/Analysis (3.00 Cr)</span>
-                <span class="font-mono">86</span>
+                <span class="font-mono">86%</span>
               </div>
 
               <div class="sm:col-span-2 font-mono font-semibold text-accent pt-2 pb-1">
@@ -993,43 +1130,43 @@
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8010 — GIS Programming 2 (3.00 Cr)</span>
-                <span class="font-mono">67</span>
+                <span class="font-mono">67%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8100 — 3D GIS (3.00 Cr)</span>
-                <span class="font-mono">78</span>
+                <span class="font-mono">78%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8106 — Spatial Analysis (3.00 Cr)</span>
-                <span class="font-mono">91</span>
+                <span class="font-mono">91%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8107 — GIS Digital Map/Cartography (3.00 Cr)</span>
-                <span class="font-mono">84</span>
+                <span class="font-mono">84%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8109 — Geospatial Systems Management (2.00 Cr)</span>
-                <span class="font-mono">81</span>
+                <span class="font-mono">81%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8110 — Management Issues in GIS (3.00 Cr)</span>
-                <span class="font-mono">89</span>
+                <span class="font-mono">89%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8125 — GIS Project (13.00 Cr)</span>
-                <span class="font-mono">82</span>
+                <span class="font-mono">82%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8132 — GIS Database Systems 2 (3.00 Cr)</span>
-                <span class="font-mono">65</span>
+                <span class="font-mono">65%</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>GIST 8138 — ArcGIS 3: Customization/Model (3.00 Cr)</span>
-                <span class="font-mono">81</span>
+                <span class="font-mono">81%</span>
               </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>Fall 2026 Work in Progress (13.00 Cr): BCST 1170, BUSA 7250, LIBS 7001, LIBS 7002, TMGT 7133</span>
-                <span class="font-mono">In Progress</span>
+              <div class="flex justify-between py-1 border-b sm:col-span-2" style="border-color: var(--border-color);">
+                <span>Fall 2026 Work in Progress (13.00 Cr): BCST 1170 (Intro to Journalism), BUSA 7250 (Management Skills/Applications), LIBS 7001 (Critical Reading &amp; Writing), LIBS 7002 (Applied Ethics), TMGT 7133 (Law for Intelligence Business)</span>
+                <span class="font-mono shrink-0 ml-2">In Progress</span>
               </div>
             </div>
           </details>
@@ -1039,24 +1176,25 @@
         <div class="surface-card rounded-xl p-6 space-y-3">
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
-              <span class="font-mono text-xs text-accent font-semibold">Stockholm University, Sweden</span>
-              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">MSc, Management (Operations Management and Control)</h2>
+              <span class="font-mono text-xs text-accent font-semibold">Stockholm University, Sweden (with Exchange at Warsaw School of Economics, Poland)</span>
+              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Master of Science (MSc) in Management (Operations Management and Control)</h2>
             </div>
-            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">2014 – 2016 (120 credits / 120 hp)</span>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">2014 – 2016 (120 ECTS / hp)</span>
           </div>
           <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
-            Degree of Master of Science (120 credits / 120 hp), Main field of study: Management (completed 2016-06-02), including 35.5 hp of credited exchange studies at the Warsaw School of Economics, Poland.
+            <strong>120 ECTS / hp</strong> (Completed June 2, 2016), including 35.5 hp of credited exchange studies at the Warsaw School of Economics (SGH), Poland.<br />
+            <strong>Notable Analytical &amp; Management Coursework:</strong> Qualitative Research [A], Management Control and Financial Analysis [B], Purchasing and Distribution Logistics [B], Product and Service Design [B], Project Leadership and Change Management [B], Performance Management [C], plus SGH Warsaw exchange coursework in Big Data, Financial Engineering, Corporate Financial Risk Management, Logistics Management, and Fundamentals of Project Management.
           </p>
 
           <details class="subtle-box rounded-lg p-3.5 text-xs">
             <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
-              <span>View Transcript Course List (Stockholm University &amp; Warsaw School of Economics)</span>
+              <span>View Official MSc Transcript Course List (Stockholm University &amp; Warsaw School of Economics)</span>
               <i class="fa-solid fa-chevron-down text-[10px]"></i>
             </summary>
             <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>FE5428 — Production Management and Services Delivery (7.5 hp)</span>
-                <span class="font-mono">D</span>
+                <span>FE5824 — Qualitative Research (7.5 hp)</span>
+                <span class="font-mono">A</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>FE5429 — Management Control and Financial Analysis (7.5 hp)</span>
@@ -1067,14 +1205,6 @@
                 <span class="font-mono">B</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>FE5431 — Society and Industry in Transformation (7.5 hp)</span>
-                <span class="font-mono">D</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>FE4422 — Performance Management (7.5 hp)</span>
-                <span class="font-mono">C</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>FE5430 — Product and Service Design (7.5 hp)</span>
                 <span class="font-mono">B</span>
               </div>
@@ -1083,15 +1213,23 @@
                 <span class="font-mono">B</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>FE5824 — Qualitative Research (7.5 hp)</span>
-                <span class="font-mono">A</span>
+                <span>FE4422 — Performance Management (7.5 hp)</span>
+                <span class="font-mono">C</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>FE5428 — Production Management and Services Delivery (7.5 hp)</span>
+                <span class="font-mono">D</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>FE5431 — Society and Industry in Transformation (7.5 hp)</span>
+                <span class="font-mono">D</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>FE5956 — Master's Dissertation in Management (30.0 hp)</span>
                 <span class="font-mono">D</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>Warsaw School of Economics — Big Data (3 ECTS / 3.0 hp)</span>
+                <span>Warsaw School of Economics — 223091-0421 Big Data (3 ECTS / 3.0 hp)</span>
                 <span class="font-mono">Credited</span>
               </div>
               <div class="flex justify-between py-1 border-b sm:col-span-2" style="border-color: var(--border-color);">
@@ -1102,59 +1240,33 @@
           </details>
         </div>
 
-        <!-- Degree 3: IBA University of Dhaka MBA & BBA -->
+        <!-- Degree 3: IBA University of Dhaka MBA -->
         <div class="surface-card rounded-xl p-6 space-y-3">
           <div class="flex flex-wrap items-start justify-between gap-2">
             <div>
               <span class="font-mono text-xs text-accent font-semibold">Institute of Business Administration (IBA), University of Dhaka, Bangladesh</span>
-              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">MBA and BBA, Finance</h2>
+              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Master of Business Administration (MBA), Major in Finance</h2>
             </div>
-            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">2007 – 2017</span>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">2012 – 2017</span>
           </div>
           <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
-            • <strong>Master of Business Administration (MBA)</strong>, Area of Concentration: Finance (Feb 2012 – Jun 2017, CGPA: 2.50 / 4.00)<br />
-            • <strong>Bachelor of Business Administration (BBA)</strong>, Major: Finance (Feb 2007 – Jun 2011, CGPA: 3.09 / 4.00)<br />
-            • Educational credentials evaluated as equivalent Canadian qualifications by World Education Services (WES).
+            <strong>CGPA: 2.50 / 4.00</strong> (Admission: February 2012, Completion: June 2017; 9 foundation courses waived on the basis of prior IBA BBA degree).<br />
+            <strong>Notable Coursework:</strong> Financial Information Analysis [A], Managerial Communication [B+], Buyer Behavior [B+], Internship Program [B+], Market Research [B], Comprehensive Exam [B], Management of Organizations [C+], Financial Institutions &amp; Markets [C+], Statistics and Decision Analysis [C], Business Strategy [C].
           </p>
 
-          <!-- MBA Transcript Details -->
           <details class="subtle-box rounded-lg p-3.5 text-xs">
             <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
-              <span>View MBA Transcript Course List (IBA, University of Dhaka)</span>
+              <span>View Official MBA Transcript Course List (IBA, University of Dhaka)</span>
               <i class="fa-solid fa-chevron-down text-[10px]"></i>
             </summary>
             <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>A 501 — Financial Accounting</span>
-                <span class="font-mono">D+</span>
+                <span>F 608 — Financial Information Analysis</span>
+                <span class="font-mono">A</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>C 501 — Managerial Communication</span>
                 <span class="font-mono">B+</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>W 501 — Management of Organizations</span>
-                <span class="font-mono">C+</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>K 502 — Statistics and Decision Analysis</span>
-                <span class="font-mono">C</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>F 602 — Financial Institutions &amp; Markets</span>
-                <span class="font-mono">C+</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>F 603 — International Finance</span>
-                <span class="font-mono">D+</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>F 605 — Portfolio Management and Investment Analysis</span>
-                <span class="font-mono">D+</span>
-              </div>
-              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
-                <span>F 608 — Financial Information Analysis</span>
-                <span class="font-mono">A</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>M 603 — Buyer Behavior</span>
@@ -1165,24 +1277,62 @@
                 <span class="font-mono">B</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>W 501 — Management of Organizations</span>
+                <span class="font-mono">C+</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>F 602 — Financial Institutions &amp; Markets</span>
+                <span class="font-mono">C+</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>K 502 — Statistics and Decision Analysis</span>
+                <span class="font-mono">C</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>W 650 — Business Strategy</span>
                 <span class="font-mono">C</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>A 501 — Financial Accounting</span>
+                <span class="font-mono">D+</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>F 603 — International Finance</span>
+                <span class="font-mono">D+</span>
+              </div>
+              <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
+                <span>F 605 — Portfolio Management and Investment Analysis</span>
+                <span class="font-mono">D+</span>
               </div>
               <div class="flex justify-between py-1 border-b" style="border-color: var(--border-color);">
                 <span>Internship Program* &amp; Comprehensive Exam*</span>
                 <span class="font-mono">B+ / B</span>
               </div>
               <div class="flex justify-between py-1 border-b sm:col-span-2" style="border-color: var(--border-color);">
-                <span>Waived Foundation Courses (W): K 501, L 501, A 502, E 501, F 501, H 501, K 503, M 501, P 501</span>
-                <span class="font-mono">W</span>
+                <span>Waived Foundation Courses (W): K 501 (Business Math &amp; Probabilities), L 501 (Legal Env. of Business), A 502 (Management Accounting), E 501 (Managerial Economics), F 501 (Financial Theory &amp; Practices), H 501 (Managing People at Work), K 503 (Management Information Systems), M 501 (Marketing Theory &amp; Practices), P 501 (Managing Operations)</span>
+                <span class="font-mono shrink-0 ml-2">W</span>
               </div>
             </div>
           </details>
+        </div>
 
-          <!-- BBA Transcript Details -->
+        <!-- Degree 4: IBA University of Dhaka BBA -->
+        <div class="surface-card rounded-xl p-6 space-y-3">
+          <div class="flex flex-wrap items-start justify-between gap-2">
+            <div>
+              <span class="font-mono text-xs text-accent font-semibold">Institute of Business Administration (IBA), University of Dhaka, Bangladesh</span>
+              <h2 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Bachelor of Business Administration (BBA), Major in Finance</h2>
+            </div>
+            <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">2007 – 2011</span>
+          </div>
+          <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+            <strong>CGPA: 3.09 / 4.00</strong> (Admission: February 2007, Completion: June 2011).<br />
+            <strong>Notable Quantitative, Analytical &amp; Finance Coursework:</strong> Mathematics for Decision Making [A], Quantitative Analysis [A], Computer Applications [A], Operations Management [A], Introduction to Economic Geography [A], International Finance [A], Sociology [A], English Language [A], Econometrics [B+], Research Methods [B+], Financial Information Analysis [B+], Managerial Economics [B+], Corporate Finance [B+], Financial Management II [B+], Public Finance [B+], Taxation [B+], Management Information Systems [B].
+          </p>
+
           <details class="subtle-box rounded-lg p-3.5 text-xs">
             <summary class="cursor-pointer font-mono font-medium text-accent flex items-center justify-between">
-              <span>View BBA Transcript Course List (IBA, University of Dhaka)</span>
+              <span>View Official BBA Transcript Course List (IBA, University of Dhaka)</span>
               <i class="fa-solid fa-chevron-down text-[10px]"></i>
             </summary>
             <div class="mt-3 pt-3 border-t grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-1.5" style="border-color: var(--border-color);">
@@ -1274,141 +1424,234 @@
     <section id="page-certifications" class="page-section space-y-8">
       
       <div class="border-b pb-4" style="border-color: var(--border-color);">
-        <p class="text-xs font-mono uppercase tracking-wider text-accent">Continuing Education</p>
-        <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-1">Certifications &amp; MOOCs</h1>
+        <p class="text-xs font-mono uppercase tracking-wider text-accent">Verified Professional Credentials &amp; Training</p>
+        <h1 class="font-serif text-2xl sm:text-3xl font-bold mt-1">Certifications, Licences &amp; Scholarships</h1>
       </div>
 
-      <!-- Esri MOOCs & Coursera Certificates -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-        
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
-              <span>Esri MOOC (6 Weeks)</span>
-              <span>Completed Oct 28, 2026</span>
+      <!-- 1. Spotlight: Three Google Data Analytics & Business Intelligence Professional Certificates -->
+      <div class="space-y-4">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <h2 class="font-serif text-xl font-bold">Google Data Analytics &amp; Business Intelligence Professional Certificates</h2>
+          <span class="font-mono text-xs text-accent">20 Verified Courses Completed (Aug 2026)</span>
+        </div>
+
+        <div class="space-y-4">
+          <!-- Google Cert 1: Advanced Data Analytics -->
+          <div class="surface-card rounded-xl p-6 space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <span class="font-mono text-xs text-accent font-semibold">Google / Coursera Professional Certificate • 7 Courses</span>
+                <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Google Advanced Data Analytics Professional Certificate</h3>
+              </div>
+              <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">Issued Aug 12, 2026</span>
             </div>
-            <h2 class="font-serif font-bold text-base mt-1.5">Make an Impact with Enterprise GIS</h2>
-          </div>
-          <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
-            Esri Training Record
-          </div>
-        </div>
-
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
-              <span>Esri MOOC (6 Weeks)</span>
-              <span>Completed Oct 6, 2026</span>
+            <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+              <strong>Completed Courses (7):</strong> (1) Foundations of Data Science; (2) Go Beyond the Numbers: Translate Data into Insights; (3) The Power of Statistics; (4) Regression Analysis: Simplify Complex Data Relationships; (5) The Nuts and Bolts of Machine Learning; (6) Google Advanced Data Analytics Capstone; (7) Accelerate Your Job Search with AI.
+            </p>
+            <div class="pt-2 border-t flex items-center justify-between text-xs font-mono" style="border-color: var(--border-color);">
+              <span style="color: var(--text-muted);">Credential ID: 4GA65QVI137E</span>
+              <a href="https://coursera.org/verify/professional-cert/4GA65QVI137E" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">
+                Verify Certificate on Coursera ↗
+              </a>
             </div>
-            <h2 class="font-serif font-bold text-base mt-1.5">The ArcGIS Imagery MOOC: Foundations and Frontiers</h2>
           </div>
-          <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
-            Esri Training Record
-          </div>
-        </div>
 
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
-              <span>Esri MOOC (6 Weeks)</span>
-              <span>Completed Oct 25, 2025</span>
+          <!-- Google Cert 2: Business Intelligence -->
+          <div class="surface-card rounded-xl p-6 space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <span class="font-mono text-xs text-accent font-semibold">Google / Coursera Professional Certificate • 4 Courses</span>
+                <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Google Business Intelligence Professional Certificate</h3>
+              </div>
+              <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">Issued Aug 11, 2026</span>
             </div>
-            <h2 class="font-serif font-bold text-base mt-1.5">Spatial Data Science: The New Frontier in Analytics</h2>
-          </div>
-          <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
-            Esri Official Learning Transcript
-          </div>
-        </div>
-
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
-              <span>Esri MOOC (6 Weeks)</span>
-              <span>Completed Mar 7, 2025</span>
+            <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+              <strong>Completed Courses (4):</strong> (1) Foundations of Business Intelligence; (2) The Path to Insights: Data Models and Pipelines; (3) Decisions, Decisions: Dashboards and Reports; (4) Accelerate Your Job Search with AI.
+            </p>
+            <div class="pt-2 border-t flex items-center justify-between text-xs font-mono" style="border-color: var(--border-color);">
+              <span style="color: var(--text-muted);">Credential ID: 2ZDSWBAV2GTJ</span>
+              <a href="https://coursera.org/verify/professional-cert/2ZDSWBAV2GTJ" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">
+                Verify Certificate on Coursera ↗
+              </a>
             </div>
-            <h2 class="font-serif font-bold text-base mt-1.5">Going Places with Spatial Analysis</h2>
           </div>
-          <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
-            Esri Official Learning Transcript
-          </div>
-        </div>
 
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="text-xs font-mono" style="color: var(--text-muted);">Google / Coursera • Aug 12, 2026 (7 Courses)</div>
-            <h2 class="font-serif font-bold text-base mt-1">Google Advanced Data Analytics Professional Certificate</h2>
-            <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
-              Foundations of Data Science, Translate Data into Insights, The Power of Statistics, Regression Analysis, Machine Learning, Capstone, Accelerate Your Job Search with AI.
+          <!-- Google Cert 3: Data Analytics -->
+          <div class="surface-card rounded-xl p-6 space-y-3">
+            <div class="flex flex-wrap items-start justify-between gap-2">
+              <div>
+                <span class="font-mono text-xs text-accent font-semibold">Google / Coursera Professional Certificate • 9 Courses</span>
+                <h3 class="font-serif text-lg sm:text-xl font-bold mt-0.5">Google Data Analytics Professional Certificate</h3>
+              </div>
+              <span class="font-mono text-xs px-2.5 py-1 rounded subtle-box">Issued Aug 10, 2026</span>
+            </div>
+            <p class="text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+              <strong>Completed Courses (9):</strong> (1) Foundations: Data, Data, Everywhere; (2) Ask Questions to Make Data-Driven Decisions; (3) Prepare Data for Exploration; (4) Process Data from Dirty to Clean; (5) Analyze Data to Answer Questions; (6) Share Data Through the Art of Visualization; (7) Introduction to Data Analysis Using Python; (8) Google Data Analytics Capstone: Complete a Case Study; (9) Accelerate Your Job Search with AI.
             </p>
+            <div class="pt-2 border-t flex items-center justify-between text-xs font-mono" style="border-color: var(--border-color);">
+              <span style="color: var(--text-muted);">Credential ID: UVCBF8P9180H</span>
+              <a href="https://coursera.org/verify/professional-cert/UVCBF8P9180H" target="_blank" rel="noopener noreferrer" class="text-accent hover:underline">
+                Verify Certificate on Coursera ↗
+              </a>
+            </div>
           </div>
-          <a href="https://coursera.org/verify/professional-cert/4GA65QVI137E" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
-            <span>Verify Credential (4GA65QVI137E)</span>
-            <span>↗</span>
-          </a>
         </div>
+      </div>
 
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="text-xs font-mono" style="color: var(--text-muted);">Google / Coursera • Aug 11, 2026 (4 Courses)</div>
-            <h2 class="font-serif font-bold text-base mt-1">Google Business Intelligence Professional Certificate</h2>
-            <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
-              Foundations of Business Intelligence, Data Models and Pipelines, Dashboards and Reports, Accelerate Your Job Search with AI.
-            </p>
+      <!-- 2. Additional Data, Python, Excel & Project Management Certificates -->
+      <div class="space-y-4">
+        <h2 class="font-serif text-xl font-bold">Python, Advanced Excel &amp; Project Management Credentials</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="text-xs font-mono" style="color: var(--text-muted);">Macquarie University / Coursera • Oct 15, 2023 (4 Courses)</div>
+              <h3 class="font-serif font-bold text-base mt-1">Excel Skills for Business Specialisation</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                Completed 4 courses: Essentials, Intermediate I, Intermediate II, and Advanced Excel Skills for Business (dashboards, data validation, automation, forecasting, and modelling).
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/specialization/USUPSTSDEBNL" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Specialisation (USUPSTSDEBNL)</span>
+              <span>↗</span>
+            </a>
           </div>
-          <a href="https://coursera.org/verify/professional-cert/2ZDSWBAV2GTJ" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
-            <span>Verify Credential (2ZDSWBAV2GTJ)</span>
-            <span>↗</span>
-          </a>
-        </div>
 
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="text-xs font-mono" style="color: var(--text-muted);">Google / Coursera • Aug 10, 2026 (9 Courses)</div>
-            <h2 class="font-serif font-bold text-base mt-1">Google Data Analytics Professional Certificate</h2>
-            <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
-              Spreadsheets, SQL, Tableau, and Python data preparation, processing, analysis, and visualization.
-            </p>
-          </div>
-          <a href="https://coursera.org/verify/professional-cert/UVCBF8P9180H" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
-            <span>Verify Credential (UVCBF8P9180H)</span>
-            <span>↗</span>
-          </a>
-        </div>
-
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
-          <div>
-            <div class="text-xs font-mono" style="color: var(--text-muted);">Macquarie University / Coursera • Oct 15, 2023 (4 Courses)</div>
-            <h2 class="font-serif font-bold text-base mt-1">Excel Skills for Business Specialization</h2>
-            <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
-              Essentials, Intermediate I, Intermediate II, and Advanced Excel Skills for Business.
-            </p>
-          </div>
-          <a href="https://coursera.org/verify/specialization/USUPSTSDEBNL" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
-            <span>Verify Credential (USUPSTSDEBNL)</span>
-            <span>↗</span>
-          </a>
-        </div>
-
-        <div class="surface-card rounded-xl p-5 flex flex-col justify-between sm:col-span-2">
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
             <div>
               <div class="text-xs font-mono" style="color: var(--text-muted);">Google / Coursera • Oct 17, 2024</div>
-              <h2 class="font-serif font-bold text-sm mt-0.5">Using Python to Interact with the Operating System</h2>
-              <a href="https://coursera.org/verify/XJ0Q6AK84738" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-accent hover:underline mt-1 inline-block">Verify (XJ0Q6AK84738) ↗</a>
+              <h3 class="font-serif font-bold text-base mt-1">Using Python to Interact with the Operating System</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                Regular expressions, file system manipulation, subprocess management, bash scripting, and automated Python workflow execution.
+              </p>
             </div>
+            <a href="https://coursera.org/verify/XJ0Q6AK84738" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Course (XJ0Q6AK84738)</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
             <div>
               <div class="text-xs font-mono" style="color: var(--text-muted);">Google / Coursera • Apr 28, 2024</div>
-              <h2 class="font-serif font-bold text-sm mt-0.5">Crash Course on Python</h2>
-              <a href="https://coursera.org/verify/X8P97VKBCZNJ" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-accent hover:underline mt-1 inline-block">Verify (X8P97VKBCZNJ) ↗</a>
+              <h3 class="font-serif font-bold text-base mt-1">Crash Course on Python</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                Python syntax, data structures, object-oriented programming foundations, and automation script design.
+              </p>
             </div>
+            <a href="https://coursera.org/verify/X8P97VKBCZNJ" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Course (X8P97VKBCZNJ)</span>
+              <span>↗</span>
+            </a>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
             <div>
               <div class="text-xs font-mono" style="color: var(--text-muted);">Google / Coursera • Aug 8, 2023</div>
-              <h2 class="font-serif font-bold text-sm mt-0.5">Foundations of Project Management</h2>
-              <a href="https://coursera.org/verify/Q5PUSHCD5DUM" target="_blank" rel="noopener noreferrer" class="font-mono text-xs text-accent hover:underline mt-1 inline-block">Verify (Q5PUSHCD5DUM) ↗</a>
+              <h3 class="font-serif font-bold text-base mt-1">Foundations of Project Management</h3>
+              <p class="text-xs mt-1.5" style="color: var(--text-secondary);">
+                Project lifecycle management, stakeholder alignment, milestone tracking, and organisational change management.
+              </p>
+            </div>
+            <a href="https://coursera.org/verify/Q5PUSHCD5DUM" target="_blank" rel="noopener noreferrer" class="mt-4 pt-3 border-t font-mono text-xs text-accent hover:underline inline-flex items-center justify-between" style="border-color: var(--border-color);">
+              <span>Verify Course (Q5PUSHCD5DUM)</span>
+              <span>↗</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3. Esri Geospatial & Spatial Data Science MOOCs -->
+      <div class="space-y-4">
+        <h2 class="font-serif text-xl font-bold">Esri Geospatial &amp; Spatial Data Science MOOCs</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Oct 28, 2026</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">Make an Impact with Enterprise GIS</h3>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Training Record
+            </div>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Oct 6, 2026</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">The ArcGIS Imagery MOOC: Foundations and Frontiers</h3>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Training Record
+            </div>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Oct 25, 2025</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">Spatial Data Science: The New Frontier in Analytics</h3>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Official Learning Transcript
+            </div>
+          </div>
+
+          <div class="surface-card rounded-xl p-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between text-xs font-mono" style="color: var(--text-muted);">
+                <span>Esri MOOC (6 Weeks)</span>
+                <span>Completed Mar 7, 2025</span>
+              </div>
+              <h3 class="font-serif font-bold text-base mt-1.5">Going Places with Spatial Analysis</h3>
+            </div>
+            <div class="mt-4 pt-3 border-t text-xs font-mono text-accent" style="border-color: var(--border-color);">
+              Verified Esri Official Learning Transcript
             </div>
           </div>
         </div>
+      </div>
 
+      <!-- 4. Banking, Financial Analysis, Licences & International Scholarships -->
+      <div class="surface-card rounded-xl p-6 space-y-4">
+        <h2 class="font-serif text-xl font-bold border-b pb-2" style="border-color: var(--border-color);">
+          Licences, Financial Analysis Training &amp; International Scholarships
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs sm:text-sm leading-relaxed" style="color: var(--text-secondary);">
+          <div class="subtle-box rounded-lg p-4 space-y-1.5">
+            <div class="font-mono text-xs text-accent font-semibold uppercase">Regulatory Licences</div>
+            <ul class="list-disc list-outside ml-4 space-y-1">
+              <li>Pilot Certificate – Small Remotely Piloted Aircraft (VLOS), Basic Operations (Transport Canada RPAS Licence)</li>
+              <li>Valid BC Class 5 Driver's Licence</li>
+            </ul>
+          </div>
+
+          <div class="subtle-box rounded-lg p-4 space-y-1.5">
+            <div class="font-mono text-xs text-accent font-semibold uppercase">Banking &amp; Credit Analysis</div>
+            <ul class="list-disc list-outside ml-4 space-y-1">
+              <li>Credit Skills Assessment — Omega Performance (Mar 2018)</li>
+              <li>Treasury Management in Banks — Financial Excellence Ltd. (Nov 2013)</li>
+              <li>Financial Analysis for Bankers &amp; Foundation Training Course on Banking — BIBM (2011–2012)</li>
+            </ul>
+          </div>
+
+          <div class="subtle-box rounded-lg p-4 space-y-1.5">
+            <div class="font-mono text-xs text-accent font-semibold uppercase">International Scholarships</div>
+            <ul class="list-disc list-outside ml-4 space-y-1">
+              <li>Swedish Institute Study Scholarship (2014)</li>
+              <li>Erasmus Study Scholarship for Exchange Students (2015)</li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- Page Footer Navigation -->
